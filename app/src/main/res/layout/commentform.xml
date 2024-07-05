@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#fff"
+    android:onClick="onClick_keyboardClose">
+<LinearLayout
+    android:id="@+id/commentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittext_border"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/accidentform_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.2"
+        android:background="@drawable/accidentform_top_header">
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+    <LinearLayout
+        android:id="@+id/whiteBodyLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:id="@+id/commentform_body_LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:onClick="onClick_keyboardClose">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approximately Cost of Repair"
+                android:layout_marginBottom="5dp"
+                style="@style/LabelStyle" />
+                <EditText
+                    android:id="@+id/appCostRprTxtbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingLeft="18dip"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+
+                    <requestFocus android:layout_width="wrap_content" />
+                </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commentform_body_LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On Site Estimation"
+                android:layout_marginBottom="5dp"
+                style="@style/LabelStyle" />
+                <Spinner
+                    android:id="@+id/onsiteestimation_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edittext_border">
+                </Spinner>>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commentform_body_LinearLayout_added"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visited Date and Time"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:drawableEnd="@drawable/medical"
+                    android:drawableRight="@drawable/medical" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="(DD MM YY hh:mm)"
+                    android:textColor="#B2BEB5"
+                    style="@style/LabelStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_added"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#00FFFFFF"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/datetextboxVisited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="true"
+                    android:contentDescription="DD"
+                    android:hint="DD"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="5.5dip"
+                    android:paddingRight="5.5dip"
+                    android:background="@drawable/edittext_border"
+                    android:textSize="8pt"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    />
+                <TextView
+                    android:id="@+id/dateseparator12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="8pt"  />
+
+
+                <EditText
+                    android:id="@+id/monthtextboxVisited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:paddingLeft="5.5dip"
+                    android:paddingRight="5.5dip"
+                    android:background="@drawable/edittext_border"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:layout_marginLeft="5dp"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/dateseparator15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="8pt"  />
+
+
+                <EditText
+                    android:id="@+id/yeartextboxVisited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:clickable="true"
+                    android:contentDescription="YY"
+                    android:hint="YY"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="5.5dip"
+                    android:paddingRight="5.5dip"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="8pt" />
+                <EditText
+                    android:id="@+id/hourstextboxVisited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:clickable="true"
+                    android:contentDescription="HH"
+                    android:hint="HH"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="5.5dip"
+                    android:paddingRight="5.5dip"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/timeseparatorC"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text=":"
+                   android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/minutestextboxVisited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittext_border"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="5.5dip"
+                    android:paddingRight="5.5dip"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="8pt" />
+
+                <Spinner
+                    android:id="@+id/ampmspinnerVisited"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edittext_border"
+                    android:dropDownWidth="match_parent"
+                    android:layout_marginLeft="5dp" />
+                     />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/commentform_body_LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:onClick="onClick_keyboardClose">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Comments"
+                style="@style/LabelStyle" />
+            <EditText
+                android:id="@+id/commentsTxtbox"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:fadeScrollbars="true"
+                android:gravity="top"
+                android:background="@drawable/edittext_border"
+                android:inputType="textMultiLine"
+                android:lines="50"
+                android:paddingLeft="12dip"
+                android:paddingTop="0dip"
+                android:paddingRight="12dip"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarDefaultDelayBeforeFade="2"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:textSize="8pt"
+                android:verticalScrollbarPosition="right" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:id="@+id/bottomLL"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:baselineAligned="true"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/commentFormBackButton"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/buttons_margin"
+                android:clickable="true"
+                android:onClick="on_click_back_button"
+                android:textColor="#fff"
+                android:textSize="9pt"
+                android:background="@drawable/navigation_button_boder"
+                android:textStyle="bold"
+                android:text="Back"/>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/commentFormCancelButton"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/buttons_margin"
+                android:layout_marginRight="@dimen/buttons_margin"
+                android:onClick="on_click_cancel_button"
+                android:textColor="#fff"
+                android:textSize="9pt"
+                android:background="@drawable/navigation_button_boder"
+                android:textStyle="bold"
+                android:text="Cancel">
+            </Button>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/commentform_submit_button"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/buttons_margin"
+                android:clickable="true"
+                android:onClick="on_click_submit_button"
+                android:textColor="#fff"
+                android:textSize="9pt"
+                android:background="@drawable/navigation_button_boder"
+                android:textStyle="bold"
+                android:text="Submit"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/header_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/visit_background1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/visit_background2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/jobNoLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/visit_textView_jobNoLable_marginLeft"
+            android:layout_marginTop="@dimen/visit_textView_marginTop"
+            android:text="Job No:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/visit_textView_textSize" />
+
+        <TextView
+            android:id="@+id/jobNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/visit_textView_jobNo_marginLeft"
+            android:layout_marginTop="@dimen/visit_textView_marginTop"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/visit_textView_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vehicleNoLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/visit_textView_vehicleNoLable_marginLeft"
+            android:layout_marginTop="@dimen/visit_textView_marginTop"
+            android:text="Vehicle No:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/visit_textView_textSize" />
+
+        <TextView
+            android:id="@+id/vehicleNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/visit_textView_jobNo_marginLeft"
+            android:layout_marginTop="@dimen/visit_textView_marginTop"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/visit_textView_textSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/view_sa_button"
+                android:layout_width="@dimen/visit_button_viewSAbutton_width"
+                android:layout_height="@dimen/visit_button_viewSAbutton_height"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/visit_button_viewSAbutton_marginRight"
+                android:layout_marginTop="@dimen/visit_button_viewSAbutton_marginTop"
+                android:background="@drawable/viewsaform_xml"
+                android:clickable="true"
+                android:onClick="on_click_view_sa_form" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/linearLayout1"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/visit_body"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/visit_spinnerLL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/visit1" >
+
+            <Spinner
+                android:id="@+id/inspectionType_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/visit_spinner_marginLeft"
+                android:layout_marginTop="@dimen/visit_spinner_marginTop"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visit_body2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/visit_spinnerLL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/visit2" >
+
+            <LinearLayout
+                android:id="@+id/dateLL"
+                android:layout_width="@dimen/visit_dateLL_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/visit_dateLL_marginLeft"
+                android:layout_marginTop="@dimen/visit_dateLL_marginTop" >
+
+                <EditText
+                    android:id="@+id/dateTextbox"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/visit_date_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="DD"
+                    android:hint="DD"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/visit_editText_textSize" />
+
+                <EditText
+                    android:id="@+id/monthTextbox"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/monthtextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/visit_editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/visit_editText_textSize" />
+
+                <EditText
+                    android:id="@+id/yearTextbox"
+                    android:layout_width="@dimen/yeartextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="1dip"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="YY"
+                    android:hint="YY"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/visit_editText_textSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chassisNoLL"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/visit_chassisNoLL_height"
+            android:background="@drawable/visit3" >
+
+            <EditText
+                android:id="@+id/chassisNo"
+                android:layout_width="@dimen/visit_chassisNo_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/visit_chassisNo_marginLeft"
+                android:layout_marginRight="@dimen/visit_chassisNo_marginRight"
+                android:layout_marginTop="@dimen/visit_chassisNo_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPostalAddress"
+                android:lines="1"
+                android:maxLength="180"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/visit_editText_textSize" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/chassisno_reason_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/visit_chassisButton_marginLeft"
+                android:layout_marginTop="@dimen/visit_chassisButton_marginTop"
+                android:background="@drawable/reason_button_xml"
+                android:clickable="true"
+                android:onClick="on_click_chassisno_reason_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engineNoLL"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/visit_engineLL_height"
+            android:background="@drawable/visit4" >
+
+            <EditText
+                android:id="@+id/engineNo"
+                android:layout_width="@dimen/visit_chassisNo_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/visit_chassisNo_marginLeft"
+                android:layout_marginRight="@dimen/visit_chassisNo_marginRight"
+                android:layout_marginTop="@dimen/visit_engineNo_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPostalAddress"
+                android:lines="1"
+                android:maxLength="180"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/visit_editText_textSize" >
+            </EditText>
+
+            <Button
+                android:id="@+id/engineno_reason_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/visit_chassisButton_marginLeft"
+                android:layout_marginTop="@dimen/visit_engineButton_marginTop"
+                android:background="@drawable/reason_button_xml"
+                android:clickable="true"
+                android:onClick="on_click_engineno_reason_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visit_body3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/visit_imageLL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/visit5" >
+
+            <LinearLayout
+                android:id="@+id/imageLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/visit_imageLL_marginLeft"
+                android:layout_marginTop="@dimen/visit_imageLL_marginTop" >
+
+                <Button
+                    android:id="@+id/documentImages_button"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:layout_marginRight="@dimen/visit_docImagesButton_marginRight"
+                    android:background="@drawable/add_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_add_document_images" >
+                </Button>
+
+                <Button
+                    android:id="@+id/documentsImagesView_button"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:layout_marginLeft="@dimen/visit_docImagesViewButton_marginLeft"
+                    android:background="@drawable/view_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_view_document_images" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visit_body1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/visit_commentsLL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/visit6" >
+
+            <LinearLayout
+                android:id="@+id/commentsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/visit_comentsLL_marginLeft"
+                android:layout_marginTop="@dimen/visit_comentsLL_marginTop" >
+
+                <EditText
+                    android:id="@+id/commentsTextbox"
+                    android:layout_width="@dimen/visit_commentsTextBox_width"
+                    android:layout_height="@dimen/visit_commentsTextBox_height"
+                    android:layout_marginTop="@dimen/visit_commentsTextBox_marginTop"
+                    android:background="@drawable/fieldtextview"
+                    android:ems="10"
+                    android:fadeScrollbars="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="@dimen/visit_commentsTextBox_paddingLeft"
+                    android:paddingRight="@dimen/visit_commentsTextBox_paddingRight"
+                    android:scrollHorizontally="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarDefaultDelayBeforeFade="2"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/visit_editText_textSize"
+                    android:verticalScrollbarPosition="right" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/previousCommentsView_button"
+                        android:layout_width="@dimen/visit_previousComm_width"
+                        android:layout_height="@dimen/visit_previousComm_height"
+                        android:layout_gravity="right|center"
+                        android:layout_marginLeft="@dimen/visit_previousComm_marginLeft"
+                        android:background="@drawable/previouscomments_button_xml"
+                        android:clickable="true"
+                        android:onClick="on_click_view_PreviousComments" >
+                    </Button>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="@dimen/visit_progressBar_width"
+                        android:layout_height="@dimen/visit_progressBar_width"
+                        android:layout_marginLeft="@dimen/visit_progressBar_marginLeft"
+                        android:layout_marginTop="@dimen/visit_progressBar_marginTop" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonstab"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/bottom_button_bar_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:clickable="true"
+        android:onClick="onClick_keyboardClose" >
+
+        <Button
+            android:id="@+id/visitActivityCancelButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="@dimen/buttons_margin"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginBottom="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/cancel_button_xml"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="on_click_cancel_button" >
+        </Button>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose" >
+
+            <Button
+                android:id="@+id/VisitFormCopyButton"
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/buttons_margin"
+                android:layout_marginTop="@dimen/buttons_margin"
+                android:background="@drawable/camera"
+                android:clickable="true"
+                android:onClick="on_click_copy_images_button" >
+            </Button>
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/visitActivitySubmitButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="@dimen/buttons_margin"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginBottom="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/submit_button_xml"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="on_click_submit_button" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

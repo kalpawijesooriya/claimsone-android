@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/otheritems_header"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/header_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/accidentform_top_header"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body"
+        android:layout_width="@dimen/formheader_width"
+        android:layout_height="@dimen/insuranceform_insuranceform_body_height"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout1_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/typeofgoodscarriedtext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/otheritems_typeofgoodscarriedtext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textLongMessage"
+                android:lines="1"
+                android:maxLength="250"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout2_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body2"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/weightofgoodscarriedtext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/otheritems_weightofgoodscarriedtext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="numberSigned|numberDecimal"
+                android:lines="1"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout3_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body3"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/damagestothegoodstext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/otheritems_damagestothegoodstext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textLongMessage"
+                android:lines="1"
+                android:maxLength="500"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout4_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body4"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/overloaded_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_marginTop="@dimen/otheritems_overloaded_spinner_marginTop"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout5_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body5"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/is_overweight_contributory_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_marginTop="@dimen/otheritems_is_overweight_contributory_spinner_marginTop"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout6_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body6"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/othervehiclesinvolvedtext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/otheritems_othervehiclesinvolvedtext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textLongMessage"
+                android:lines="1"
+                android:maxLength="500"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout7_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body7"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/thirdpartydamagespropertytext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/otheritems_thirdpartydamagespropertytext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textLongMessage"
+                android:lines="1"
+                android:maxLength="500"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otheritems_body_LinearLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/otheritems_body_LinearLayout8_height"
+            android:layout_gravity="center"
+            android:background="@drawable/otheritems_body8"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/injuriestext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/otheritems_injuriestext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="actionDone"
+                android:inputType="textLongMessage"
+                android:lines="1"
+                android:maxLength="300"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/bottom_button_bar_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:clickable="true"
+        android:onClick="onClick_keyboardClose" >
+
+        <Button
+            android:id="@+id/OtheritemsBackButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/OtheritemsNextButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button2_marginLeft"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/next_button_xml"
+            android:onClick="on_click_next_button" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

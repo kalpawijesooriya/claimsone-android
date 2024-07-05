@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/multilevel_LL_height"
+    android:background="@drawable/pendingjobs_middle_row"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/group2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/multilevel3_marginLeft"
+        android:paddingLeft="@dimen/multilevel3_paddingLeft"
+        android:textColor="@color/black"
+        android:textSize="@dimen/multilevel3_textSize"
+        android:textStyle="bold" />
+
+</LinearLayout>

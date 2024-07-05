@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:fadingEdge="none"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/damageditems_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/damageditems_header"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/white_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_gravity="center"
+        android:background="@drawable/white_body"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/multilevel_textView2_marginLeft"
+                android:layout_marginRight="@dimen/multilevel_textView2_marginRight"
+                 android:text="Search:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multilevel_textSize" />
+
+            <SearchView
+                android:id="@+id/search_damaged_items"
+                android:layout_width="@dimen/multilevel_damagedItemsOtherField_width"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/comment_custom_marginLeft10"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:queryBackground="@color/white"
+                android:queryHint="@string/search_hint"
+                android:searchIcon="@drawable/search_icon"
+                android:textColor="@color/black">
+
+                <requestFocus />
+            </SearchView>
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="visible"></ExpandableListView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/other_height"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/multilevel_textView2_marginLeft"
+                android:layout_marginRight="@dimen/multilevel_textView2_marginRight"
+                android:text="Other:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multilevel_textSize" />
+
+            <EditText
+                android:id="@+id/damagedItemsOtherField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/multilevel_textView2_marginLeft"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multilevel_textSize"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/button_height_visit"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/buttons_margin"
+                android:background="@drawable/back_button_xml"
+                android:onClick="multilevel_back_button"></Button>
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/button_height_visit"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/buttons_margin"
+                android:background="@drawable/reset_button_xml"
+                android:onClick="on_click_reset_button"></Button>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/button_height_visit"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/buttons_margin"
+                android:background="@drawable/xml_ok_button"
+                android:onClick="multilevel_ok_click"></Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

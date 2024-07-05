@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#fff"
+    android:onClick="onClick_keyboardClose">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:background="@drawable/edittext_border"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/accidentform_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/accidentform_top_header">
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+    <LinearLayout
+        android:id="@+id/whitebody_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:paddingBottom="10dp" >
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Chassis No"
+                    style="@style/LabelStyle" />
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:drawableEnd="@drawable/medical"
+                    android:drawableRight="@drawable/medical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/chasisnotext"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginRight="@dimen/driverform_driversnametext_marginRight"
+                    android:layout_weight="9"
+                    android:background="@drawable/edittext_border"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="180"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/chassisno_reason_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:background="@drawable/reason_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_chassisno_reason_btn" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Engine No" />
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:drawableEnd="@drawable/medical"
+                    android:drawableRight="@drawable/medical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/engineLL"
+                android:layout_width="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/enginenotext"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="40dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginRight="@dimen/driverform_driversnametext_marginRight"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="180"
+                    android:maxLines="1"
+                    android:background="@drawable/edittext_border"
+                    android:singleLine="true"
+                    android:textSize="8pt" />
+
+                <Button
+                    android:id="@+id/engineno_reason_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@drawable/reason_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_engineno_reason_btn" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meter Reading"
+                android:layout_marginBottom="5dp"
+                style="@style/LabelStyle" />
+
+            <EditText
+                android:id="@+id/meterreadingtext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="8pt"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Pint of Impact :"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                style="@style/LabelStyle" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/vehicleform_linearLayout3_marginTop"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:id="@+id/pointofimpactaddbutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/add_button_xml"
+                    android:onClick="on_click_point_of_impact" />
+
+                <Button
+                    android:id="@+id/pointofimpactviewbutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/view_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_pointofimpact_view_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Damaged Items :"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                style="@style/LabelStyle" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/vehicleform_linearLayout3_marginTop"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+            <Button
+                android:id="@+id/damageditemsbutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="damageditems_button_click" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="PAD Items :"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                style="@style/LabelStyle" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/vehicleform_linearLayout3_marginTop"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/predamageditemsbutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="pre_damageditems_button_click" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Possible D/R :"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                style="@style/LabelStyle" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/vehicleform_linearLayout3_marginTop"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/possibledrbutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="possibledr_button_click" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Tyre Condition :"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                style="@style/LabelStyle" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/vehicleform_linearLayout3_marginTop"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="tyrecondition_button_click" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40px"
+            android:orientation="vertical" >
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:text="Are They Contributory" />
+            <Spinner
+                android:id="@+id/contributory_spinner"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_border"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:id="@+id/linearLayout56"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:baselineAligned="true"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/VehicleformBackButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:clickable="true"
+            android:onClick="on_click_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/navigation_button_boder"
+            android:textColor="#fff"
+            android:textSize="9pt"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Back">
+        </Button>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1">
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/VehicleformNextButton"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="on_click_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/navigation_button_boder"
+            android:textColor="#fff"
+            android:textSize="9pt"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Next">
+        </Button>
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

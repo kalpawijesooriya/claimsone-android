@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#fff"
+    android:onClick="onClick_keyboardClose">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittext_border"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/accidentform_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.2"
+        android:background="@drawable/accidentform_top_header">
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+        <LinearLayout
+            android:id="@+id/accidentform_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="15px"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job No"
+                    style="@style/LabelStyle" />
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:drawableEnd="@drawable/medical"
+                    android:drawableRight="@drawable/medical" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/jobnotext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edittext_border"
+                    android:digits="@string/alphanumeric_dash"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle No"
+                    style="@style/LabelStyle" />
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:drawableEnd="@drawable/medical"
+                    android:drawableRight="@drawable/medical" />
+
+            </LinearLayout>
+                <EditText
+                    android:id="@+id/vehiclenotext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edittext_border"
+                    android:paddingStart="0dp"
+                    android:digits="@string/alphanumeric_dash"
+                    android:imeOptions="flagNavigateNext"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location of Accident"
+                    style="@style/LabelStyle" />
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp"
+                    android:layout_marginStart="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="10px"
+                    android:drawableEnd="@drawable/medical"
+                    android:drawableRight="@drawable/medical" />
+
+            </LinearLayout>
+                <EditText
+                    android:id="@+id/locationofaccidenttext"
+                    android:background="@drawable/edittext_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingStart="0dp"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="70"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accidentform_body_LinearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Reported"
+                    style="@style/LabelStyle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="(DD MM YY hh:mm)"
+                    android:textColor="#B2BEB5"
+                    style="@style/LabelStyle" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#00FFFFFF"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onClick_keyboardClose"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/datetextbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="true"
+                        android:contentDescription="DD"
+                        android:hint="DD"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:background="@drawable/edittext_border"
+                        android:textSize="8pt"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/dateseparator1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="8pt"  />
+
+                    <EditText
+                        android:id="@+id/monthtextbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="MM"
+                        android:hint="MM"
+                        android:layout_marginLeft="5dp"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/dateseparator2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:layout_marginLeft="5dp"
+                        android:text="/"
+                        android:background="#00FFFFFF"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="8pt"  />
+
+                    <EditText
+                        android:id="@+id/yeartextbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="YY"
+                        android:hint="YY"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <EditText
+                        android:id="@+id/hourstextbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="HH"
+                        android:hint="HH"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/timeseparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:text=":"
+                        android:layout_marginLeft="5dp"
+                        android:background="#00FFFFFF"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                    <EditText
+                        android:id="@+id/minutestextbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="MM"
+                        android:hint="MM"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <Spinner
+                        android:id="@+id/ampmspinner"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_border"
+                        android:dropDownWidth="match_parent"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accidentform_body_LinearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Date and Time Reported"
+                    style="@style/LabelStyle" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="(DD MM YY hh:mm)"
+                        android:textColor="#B2BEB5"
+                        style="@style/LabelStyle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutA"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#00FFFFFF"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onClick_keyboardClose"
+                    android:layout_marginBottom="5px"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/datetextboxA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="true"
+                        android:contentDescription="DD"
+                        android:hint="DD"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:background="@drawable/edittext_border"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/dateseparator1A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:text="/"
+                        android:background="#00FFFFFF"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                    <EditText
+                        android:id="@+id/monthtextboxA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="MM"
+                        android:hint="MM"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/dateseparator2A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:text="/"
+                        android:background="#00FFFFFF"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                    <EditText
+                        android:id="@+id/yeartextboxA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="YY"
+                        android:hint="YY"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <EditText
+                        android:id="@+id/hourstextboxA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="HH"
+                        android:hint="HH"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/timeseparatorA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:layout_marginLeft="5dp"
+                        android:text=":"
+                        android:background="#00FFFFFF"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="8pt" />
+
+                    <EditText
+                        android:id="@+id/minutestextboxA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="MM"
+                        android:hint="MM"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <Spinner
+                        android:id="@+id/ampmspinnerA"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_border"
+                        android:dropDownWidth="match_parent"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+
+                <EditText
+                    android:id="@+id/contactnotext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edittext_border"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:layout_gravity="center"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Caller"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+                <EditText
+                    android:id="@+id/nameofcallertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edittext_border"
+                    android:layout_gravity="center_horizontal"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt"  >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Type and Colour"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+
+                <EditText
+                    android:id="@+id/vehicletypeandcolortext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="actionDone"
+                    android:inputType="textShortMessage"
+                    android:lines="1"
+                    android:maxLength="80"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:background="@drawable/edittext_border"
+                    android:singleLine="true"
+                    android:textSize="8pt">
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:id="@+id/bottomLyr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:baselineAligned="true"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/AccidentDetailsCancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="on_click_cancel_button"
+                android:text="Cancel"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="9pt"
+                android:background="@drawable/navigation_button_boder"
+                android:textStyle="bold"></Button>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1">
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/AccidentDetailsNextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:background="@drawable/navigation_button_boder"
+                android:clickable="true"
+                android:onClick="on_click_next_button"
+                android:text="Next"
+                android:textSize="9pt"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#fff">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameLayoutCanvasWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCanvasWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="@dimen/paint_button_width"
+                android:layout_height="@dimen/paint_button_height"
+                android:clickable="true"
+                android:onClick="on_click_Green_button"
+                android:width="@dimen/paint_button_androidwidth">
+            </Button>
+
+            <Button
+                android:id="@+id/btnRed"
+                android:layout_width="@dimen/paint_button_width"
+                android:layout_height="@dimen/paint_button_height"
+                android:layout_marginTop="@dimen/paint_button_marginTop"
+                android:clickable="true"
+                android:onClick="on_click_Red_button"
+                android:width="@dimen/paint_button_androidwidth" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnEraser"
+                android:layout_width="@dimen/paint_button_width"
+                android:layout_height="@dimen/paint_button_height"
+                android:layout_marginTop="@dimen/paint_button_marginTop"
+                android:clickable="true"
+                android:onClick="on_click_Eraser_button"
+                android:width="@dimen/paint_button_androidwidth" >
+            </Button>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_button_bar">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button"></Button>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/save_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_save_button"></Button>
+    </RelativeLayout>
+
+</LinearLayout>

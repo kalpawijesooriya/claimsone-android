@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_body"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/sentitems_listview"
+                android:layout_width="728dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dip"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/black"
+                android:dividerHeight="0px" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/submitteditems_button"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/pendinglist_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_submittedItems" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

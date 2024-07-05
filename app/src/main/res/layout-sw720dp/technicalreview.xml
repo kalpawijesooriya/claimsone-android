@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/technicalreviews_header"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/header_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/accidentform_top_header"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/technicalreviews_body"
+        android:layout_width="@dimen/formheader_width"
+        android:layout_height="@dimen/insuranceform_insuranceform_body_height"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout1_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body1"
+            android:orientation="vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/claim_processing_branch"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/technicalreviews_claim_processing_branch_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:completionThreshold="1"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textAutoComplete"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/editText_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout2_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body2"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/purpose_of_journey_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_marginTop="@dimen/technicalreviews_purpose_of_journey_spinner_marginTop"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout3_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body3"
+            android:orientation="vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/nearestpolicestation"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/technicalreviews_nearestpolicestation_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:completionThreshold="1"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textAutoComplete"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/editText_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout4_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body4"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/pavvaluetext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/technicalreviews_pavvaluetext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout5_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body5"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/consistency_by_csr_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_marginTop="@dimen/technicalreviews_consistency_by_csr_spinner_marginTop"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout6_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/technicalreviews_LinearLayout02_marginLeft"
+                android:layout_marginTop="@dimen/technicalreviews_LinearLayout02_marginTop" >
+
+                <Button
+                    android:id="@+id/documentsimagesbutton"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:layout_marginRight="@dimen/technicalreviews_imagesbutton_marginRight"
+                    android:background="@drawable/add_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_add_document_images" >
+                </Button>
+
+                <Button
+                    android:id="@+id/documentsimagesviewbutton"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:background="@drawable/view_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_view_document_images" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/technicalreviews_body_LinearLayout7_height"
+            android:layout_gravity="center"
+            android:background="@drawable/technicalreviews_body7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/technicalreviews_LinearLayout02_marginLeft"
+                android:layout_marginTop="@dimen/technicalreviews_LinearLayout03_marginTop" >
+
+                <Button
+                    android:id="@+id/accidentimagesaddbutton"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:layout_marginRight="@dimen/technicalreviews_imagesbutton_marginRight"
+                    android:background="@drawable/add_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_add_accident_images" >
+                </Button>
+
+                <Button
+                    android:id="@+id/accidentimagesviewbutton"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:background="@drawable/view_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_view_accident_images" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/backgroundColorGray" />
+
+        <!--<LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/otheritems_body_LinearLayout8_height"
+            android:layout_gravity="center"
+            android:background="@drawable/empty_further_review"
+            android:orientation="vertical" />-->
+
+        <LinearLayout
+            android:id="@+id/technicalreviews_body_LinearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/technical_form_further_review_height"
+            android:layout_gravity="center"
+            android:gravity=""
+            android:background="@drawable/further_review_new"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/further_review_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_marginTop="@dimen/spinner_margin_top_further_review"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/bottom_button_bar_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:clickable="true"
+        android:onClick="onClick_keyboardClose" >
+
+        <Button
+            android:id="@+id/TechnicalReviewFormBackButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/buttons_margin"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button" >
+        </Button>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/camera"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:onClick="on_click_capture_copy_images" />
+
+        <!--<LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/buttons_margin2"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick_keyboardClose" >
+
+        </LinearLayout>-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/TechnicalReviewFormNextButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:layout_marginRight="@dimen/buttons_margin"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/next_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_next_button" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

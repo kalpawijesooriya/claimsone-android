@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/draft_body_height"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <!-- uncomment for activate the search bar 
+        
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="@dimen/header_width"
+            android:layout_height="@dimen/filter_height"
+            android:background="@drawable/filterbar_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sent_items_userid_marginLeft"
+                android:text="BH45215"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="@dimen/datebd_width"
+                android:layout_height="@dimen/date_bg_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sent_items_linearlayout11_marginLeft"
+                android:background="@drawable/date_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="0dip" >
+
+                <EditText
+                    android:id="@+id/dateTextboxi"
+                    android:layout_width="@dimen/datetextbox_width"
+                    android:layout_height="@dimen/datetextbox_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/datetextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="DD"
+                    android:gravity="center"
+                    android:hint="DD"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="0dip"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/sent_editText_font_size" />
+
+                <TextView
+                    android:id="@+id/dateseparator1"
+                    android:layout_width="@dimen/slash_width"
+                    android:layout_height="@dimen/datetextbox_height"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sent_editText_font_size" />
+
+                <EditText
+                    android:id="@+id/monthTextboxi"
+                    android:layout_width="@dimen/month_textBox_width"
+                    android:layout_height="@dimen/datetextbox_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/sent_editText_font_size" />
+
+                <TextView
+                    android:id="@+id/dateseparator2"
+                    android:layout_width="@dimen/slash_width"
+                    android:layout_height="@dimen/datetextbox_height"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:paddingLeft="2dp"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sent_editText_font_size" />
+
+                <EditText
+                    android:id="@+id/yearTextboxi"
+                    android:layout_width="@dimen/sentItem_year_textBox_width"
+                    android:layout_height="@dimen/datetextbox_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dip"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="YY"
+                    android:hint="YY"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="0dp"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/sent_editText_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout14"
+                android:layout_width="@dimen/statusbd_width"
+                android:layout_height="@dimen/date_bg_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/status_marginLeft"
+                android:background="@drawable/status_bg1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/status_spinner"
+                    android:layout_width="@dimen/sentItems_spinner_width"
+                    android:layout_height="@dimen/sentItems_spinner_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/sentItems_spinner_marginLeft"
+                    android:background="@drawable/spinneritem_bg_ultra" >
+                </Spinner>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/search_submit_button_xml"
+                android:clickable="true"
+                android:onClick="on_click_search" >
+            </Button>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/sentItems_progressbar_height"
+                android:layout_height="@dimen/sentItems_progressbar_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sentItems_progressbar_marginLeft" />
+        </LinearLayout>
+        
+         -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="@dimen/header_width"
+            android:layout_height="@dimen/sent_items_body_height"
+            android:background="@drawable/white_body"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/sentitems_listview"
+                android:layout_width="728dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dip"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/black"
+                android:dividerHeight="0px" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/bottom_button_bar_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/submitteditems_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/button2_marginLeft"
+            android:background="@drawable/pendinglist_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_submittedItems" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

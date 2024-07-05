@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+      >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white" 
+         >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/possible_dr_textView_marginRight"
+                android:layout_marginRight="5dip"
+                android:text="Other:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multilevel_textSize" 
+                
+               />
+
+            <EditText
+                android:id="@+id/possibledr_editText"
+                android:layout_width="460dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:paddingLeft="10dip"
+                android:textColor="@color/black"
+            	android:textSize="@dimen/multilevel_textSize" 
+                android:editable="true">
+
+               
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

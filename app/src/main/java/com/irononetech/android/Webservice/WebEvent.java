@@ -1,0 +1,5 @@
+package com.irononetech.android.Webservice;
+
+public enum WebEvent {
+	LOGIN_WEB_SERVICE,FILE_COPY, IMAGE_UPLOAD, DATAUPLOAD, SEARCH_WEB_SERVICE, LOGOUT_WEB_SERVICE, DATA_RETRIEVE_WEB_SERVICE
+}

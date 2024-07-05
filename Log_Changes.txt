@@ -1,0 +1,24 @@
+Changes made on Android Claims One Application
+
+1. In Damaged items List view, 
+	1.1 Search Icon color changed to black.
+	1.2 Query Background changed to white.
+	1.3 Search View margin right set.
+	1.4 Other Edit text field area is increased and margin uped.
+	1.5 All the Group will collapse when T/O click empty text field on search bar or empty the text in search bar
+	1.6 Condition of all tyres will be resetted while T/O reset the Vehicle type and Reset confirmation is changed.
+
+2. Technical review layout "NEXT" button aligned properly.
+3. Comment Layout "SUBMIT" button algined properly.
+4. Selected Images will be matched even if T/O deletes the images from the folder and last taken photo will be in the top. [Important one]
+5. Copy image button UI changed on Visit Activity.
+6. Change ID made not as editable in Search mode.
+7. Changed Visited Date not editable in Search mode.
+8. Camera Icon is hidden in Technical Review Activity in Search mode.
+9. Date field Default text aligned properly.
+10. Cancel and Back button on Search View Comment Activity is changed.
+
+Current Issues
+
+1. Long press on >Apk24 is not working
+2. Loader process view for loading images

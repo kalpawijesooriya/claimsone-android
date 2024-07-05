@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_logo_marginTop">450dp</dimen>
+    <dimen name="login_logo_width">431dp</dimen>
+    <dimen name="login_logo_height">173dp</dimen>
+    <dimen name="login_textViewVersion_marginTop">60dp</dimen>
+    <dimen name="login_textViewVersion_marginLeft">358dp</dimen>
+    <dimen name="login_loginback1_marginTop">60dp</dimen>
+    <dimen name="login_loginback1_marginLnR">100dp</dimen>
+    <dimen name="login_loginback1_width">589dp</dimen>
+    <dimen name="login_loginback1_height">316dp</dimen>
+    <dimen name="login_username_marginLeft">120dp</dimen>
+    <dimen name="login_username_textSize">14pt</dimen>
+    <dimen name="login_username_marginTop">33dp</dimen>
+    <dimen name="login_username_marginRight">30dp</dimen>
+    <dimen name="login_password_marginTop">33dp</dimen>
+    <dimen name="login_button_marginTop">32dp</dimen>
+    <dimen name="login_button_marginBottom">13dp</dimen>
+    <dimen name="login_button_marginLnR">13dp</dimen>
+    
+    <dimen name="splashform_progressbar_marginTop">160dp</dimen>
+    <dimen name="splashform_textView_marginTop">175dp</dimen>
+    <dimen name="splashform_textView_marginLeft">588dp</dimen>
+    <dimen name="splashform_linearLayout_height">400dp</dimen>
+    <dimen name="splashform_linearLayout_width">700dp</dimen>
+    <dimen name="splashform_linearLayout_marginTop">325dp</dimen>
+    <dimen name="splashform_textViewVersion_textSize">7pt</dimen>
+    
+    <dimen name="home_button_layout_width">362dp</dimen>
+    <dimen name="home_button_layout_height">350dp</dimen>
+    <dimen name="home_layout_marginLeft">36dp</dimen>
+    <dimen name="home_layout_header_marginTop">137dp</dimen>
+    <dimen name="home_header_width">724dp</dimen>
+    <dimen name="header_height">112dp</dimen>
+    <dimen name="header_width">724dp</dimen>
+    <dimen name="header_marginTop">36dp</dimen>
+    <dimen name="formheader_width">722dp</dimen>
+    
+   
+    <dimen name="search_background2_height">214dp</dimen>
+    <dimen name="search_editText_width">626dp</dimen>
+    <dimen name="search_editText_height">45dp</dimen>
+    <dimen name="search_editText_marginTop">93dp</dimen>
+    <dimen name="editText_textSize">14pt</dimen>
+    <dimen name="bottom_button_bar_height">89dp</dimen>
+    <dimen name="search_bottom_button_bar_marginTop">27dp</dimen>
+     <dimen name="search_linearLayout_body_width">726dp</dimen>
+    
+    <dimen name="buttons_margin">5dp</dimen>
+    <dimen name="button2_marginLeft">286dp</dimen>
+    <dimen name="button_width">214dp</dimen>
+    <dimen name="button_height">78dp</dimen>
+    
+    <dimen name="button_width_visit">214dp</dimen>
+    <dimen name="button_height_visit">78dp</dimen>
+    
+    <dimen name="saForm_editText_width">600dp</dimen>
+    <dimen name="editText_height">55dp</dimen>
+    <dimen name="bottom_button_marginTop">10dp</dimen>
+    
+    <dimen name="accidentform_center_form_height">970dp</dimen>
+    <dimen name="accidentform_jobnotext_marginTop">69dp</dimen>
+    <dimen name="accidentform_vehiclenotext_marginTop">75dp</dimen>
+    <dimen name="accidentform_locationofaccidenttext_marginTop">69dp</dimen>
+    <dimen name="accidentform_linearLayout2_marginTop">67dp</dimen>
+    <dimen name="accidentform_locationofaccidenttext_marginBottom">13dp</dimen>
+    <dimen name="accidentform_editText_paddingLeft">10dp</dimen>  
+    <dimen name="accidentform_hourstextbox_width">65dp</dimen>
+    <dimen name="accidentform_hourstextbox_marginLeft">30dp</dimen>
+    <dimen name="accidentform_hourstextbox_paddingLeft">10dp</dimen>
+    <dimen name="accidentform_minutestextbox_width">60dp</dimen>
+    <dimen name="accidentform_minutestextbox_marginLeft">5dp</dimen>
+    <dimen name="accidentform_ampmspinner_width">185dp</dimen>
+    <dimen name="accidentform_linearLayoutA_width">600dp</dimen>
+    <dimen name="accidentform_linearLayoutA_marginTop">65dp</dimen>
+    <dimen name="accidentform_contactnotext_marginTop">65dp</dimen>
+    <dimen name="accidentform_nameofcallertext_marginTop">64dp</dimen>
+    <dimen name="accidentform_vehicletypeandcolortext_marginTop">60dp</dimen>
+    <dimen name="accidentform_bottomLyr_marginTop">10dp</dimen>
+    <dimen name="accidentform_LL_height">120dp</dimen>
+    <dimen name="accidentLL1_text_marginTop">69dp</dimen>
+    
+    <dimen name="dateseparator_width">10dp</dimen>
+    <dimen name="date_height">44dp</dimen>
+    <dimen name="dateNmonth_textbox_width">75dp</dimen>
+    <dimen name="datetextbox_paddingleft">10dp</dimen> 
+    <dimen name="monthtextbox_marginLeft">5dp</dimen>
+    <dimen name="yeartextbox_width">70dp</dimen>
+    
+    <dimen name="textviewforspinner_small_TextView01_width">170dp</dimen>
+    <dimen name="textviewforspinner_small_TextView01_height">40dp</dimen>
+    <dimen name="textviewforspinner_width">400dp</dimen>
+    <dimen name="textviewforspinner_height">40dp</dimen>
+    
+    <!-- burusothman start -->
+    <dimen name="draft_listitem_fontsize">8pt</dimen>
+    <dimen name="draft_top_listitem_fontsize">10pt</dimen>
+    <dimen name="tabHost_height">58dp</dimen>
+    <dimen name="draft_body_height">900dp</dimen>
+    <dimen name="list_margin_left">100dp</dimen>
+    <dimen name="search_list_margin_left">30dp</dimen>
+    <dimen name="white_body_height">970dp</dimen>
+    <dimen name="button_distance">36dp</dimen>
+    <dimen name="field_layout_height">130dp</dimen>
+    <dimen name="field_margin_left">40dp</dimen>
+    <dimen name="moro_claimFrom_approx_marginTop">25dp</dimen>
+	<dimen name="edit_text_width">626dp</dimen>
+ 	<dimen name="motorClaimsForm_spinner_marginTop">12dp</dimen>
+ 	<dimen name="mcf_comment_marginTop">40dp</dimen>
+ 	<dimen name="mcf_comment_height">620dp</dimen>
+ 	<dimen name="sent_items_body_height">863dp</dimen>
+ 	<dimen name="sent_items_userid_marginLeft">80dp</dimen>
+ 	<dimen name="sent_items_linearlayout11_marginLeft">15dp</dimen>
+ 	<dimen name="datetextbox_width">30dp</dimen>
+ 	<dimen name="datetextbox_height">30dp</dimen>
+ 	<dimen name="datetextbox_marginLeft">80dp</dimen>
+ 	<dimen name="slash_width">10dp</dimen>
+ 	<dimen name="month_textBox_width">30dp</dimen>
+ 	<dimen name="sentItem_year_textBox_width">27dp</dimen>
+ 	<dimen name="status_height">50dp</dimen>
+ 	<dimen name="status_marginLeft">7dp</dimen>
+ 	<dimen name="sentItems_spinner_width">185dp</dimen>
+ 	<dimen name="sentItems_spinner_height">37dp</dimen>
+ 	<dimen name="sentItems_spinner_marginLeft">86dp</dimen>
+ 	<dimen name="sentItems_progressbar_height">25dp</dimen>
+ 	<dimen name="sentItems_progressbar_marginLeft">10dp</dimen>
+ 	<dimen name="sent_editText_font_size">10pt</dimen>
+ 	<dimen name="statusbd_width">275dp</dimen>
+ 	<dimen name="datebd_width">205dp</dimen>
+ 	<dimen name="filter_height">57dp</dimen>
+ 	<dimen name="date_bg_height">44dp</dimen>
+ 	<dimen name="button_size">42dp</dimen>
+ 	<dimen name="spinner_padding">190dp</dimen>
+ 	<dimen name="commentform_body_LinearLayout1_height">130dp</dimen>
+ 	<dimen name="commentform_body_LinearLayout3_height">720dp</dimen>
+    <!-- burusothman end -->
+    
+    <dimen name="visit_textView_jobNoLable_marginLeft">30dp</dimen>
+    <dimen name="visit_textView_textSize">10pt</dimen>
+    <dimen name="visit_textView_marginTop">13dp</dimen>
+    <dimen name="visit_textView_jobNo_marginLeft">10dp</dimen>
+    <dimen name="visit_textView_vehicleNoLable_marginLeft">50dp</dimen>
+    <dimen name="visit_button_viewSAbutton_marginRight">27dp</dimen>
+    <dimen name="visit_button_viewSAbutton_marginTop">2dp</dimen>
+    <dimen name="visit_button_viewSAbutton_width">160dp</dimen>
+    <dimen name="visit_button_viewSAbutton_height">46dp</dimen>
+    <dimen name="visit_linearLayout1_height">920dp</dimen>
+    <dimen name="visit_spinner_marginTop">20dp</dimen>
+    <dimen name="visit_spinner_width">620dp</dimen>
+    <dimen name="visit_spinner_marginLeft">30dp</dimen>
+    <dimen name="visit_spinnerLL_height">115dp</dimen>
+    <dimen name="visit_spinner_paddingRight">190dp</dimen>
+    <dimen name="visit_dateLL_marginTop">23dp</dimen>
+    <dimen name="visit_dateLL_marginLeft">60dp</dimen>
+    <dimen name="visit_dateLL_width">600dp</dimen>
+    <dimen name="visit_date_marginLeft">-4dp</dimen>
+    <dimen name="visit_editText_textSize">14pt</dimen>
+    <dimen name="visit_chassisNoLL_height">115dp</dimen>
+    <dimen name="visit_chassisNo_width">553dp</dimen>
+    <dimen name="visit_chassisNo_marginLeft">70dp</dimen>
+    <dimen name="visit_chassisNo_marginRight">45dp</dimen>
+    <dimen name="visit_chassisNo_marginTop">64dp</dimen>
+    <dimen name="visit_chassisNo_paddingLeft">28dp</dimen>
+    <dimen name="visit_chassisButton_marginLeft">-25dp</dimen>
+    <dimen name="visit_chassisButton_marginTop">27dp</dimen>
+    <dimen name="visit_engineLL_height">120dp</dimen>
+    <dimen name="visit_engineNo_marginTop">67dp</dimen>
+    <dimen name="visit_engineButton_marginTop">29dp</dimen>
+    <dimen name="visit_imageLL_marginLeft">390dp</dimen>
+    <dimen name="visit_imageLL_marginTop">15dp</dimen>
+    <dimen name="visit_imageLL_height">110dp</dimen>
+    <dimen name="visit_docImagesButton_marginRight">30dp</dimen>
+    <dimen name="visit_docImagesViewButton_marginLeft">10dp</dimen>
+    <dimen name="visit_comentsLL_marginLeft">40dp</dimen>
+    <dimen name="visit_comentsLL_marginTop">45dp</dimen>
+    <dimen name="visit_commentsLL_height">350dp</dimen>
+    <dimen name="visit_commentsTextBox_width">609dp</dimen>
+    <dimen name="visit_commentsTextBox_height">260dp</dimen>
+    <dimen name="visit_commentsTextBox_marginTop">5dp</dimen>
+    <dimen name="visit_commentsTextBox_paddingLeft">30dp</dimen>
+    <dimen name="visit_commentsTextBox_paddingRight">18dp</dimen>
+    <dimen name="visit_previousComm_width">48dp</dimen>
+    <dimen name="visit_previousComm_height">260dp</dimen>
+    <dimen name="visit_previousComm_marginLeft">15dp</dimen>
+    <dimen name="visit_progressBar_width">23dp</dimen>
+    <dimen name="visit_progressBar_marginLeft">28dp</dimen>
+    <dimen name="visit_progressBar_marginTop">10dp</dimen>
+    <dimen name="visit_linearLayout11_width">275dp</dimen>
+    <dimen name="visit_linearLayout11_marginLeft">2dp</dimen>
+    
+   	
+	<dimen name="insuranceform_insuranceform_body_width">722dp</dimen>
+    <dimen name="insuranceform_insuranceform_body_height">970dp</dimen>
+    <dimen name="insuranceform_nameofinsuredtext_marginTop">70dp</dimen>
+    <dimen name="insuranceform_contactnoofinsuredtext_marginTop">61dp</dimen>
+    <dimen name="insuranceform_policycovernotenotext_marginTop">58dp</dimen> 
+    <dimen name="insuranceform_linearLayout2_marginTop">62dp</dimen> 
+    <dimen name="insuranceform_linearLayout_marginLeft">215dp</dimen> 
+    <dimen name="insuranceform_policycovernoteserialnotext_marginTop">57dp</dimen> 
+    <dimen name="insuranceform_covernoteissuedbytext_marginTop">55dp</dimen> 
+    <dimen name="insuranceform_reasonsforissuingcovernotetext_marginTop">55dp</dimen> 
+    <dimen name="insuranceform_linearLayout22_marginTop">18dp</dimen> 
+    <dimen name="insuranceform_LL1_height">128dp</dimen>
+    <dimen name="insuranceform_LL2_height">122dp</dimen>
+    <dimen name="insuranceform_LL3_height">117dp</dimen>
+    <dimen name="insuranceform_LL5_height">78dp</dimen>
+    <dimen name="insuranceform_LL7_height">119dp</dimen>
+    <dimen name="insuranceform_LL8_height">155dp</dimen>
+    
+    <dimen name="editText_width">626dp</dimen>
+    <dimen name="editText_paddingLeft">24dp</dimen>
+    
+    <dimen name="spinner_width">660dp</dimen>
+    <dimen name="spinner_width_yes_no">660dp</dimen>
+    <dimen name="spinner_paddinfRight">185dp</dimen>
+    
+    <dimen name="driverform_body_height">970dp</dimen>
+    <dimen name="driverform_body_width">722dp</dimen>
+    <dimen name="driverform_linearLayout1_height">55dp</dimen>
+    <dimen name="driverform_linearLayout1_marginTop">62dp</dimen>
+    <dimen name="driverform_driversnametext_width">553dp</dimen>
+    <dimen name="driverform_driversnametext_marginTop">6dp</dimen>
+    <dimen name="driverform_driversnametext_marginLeft">40dp</dimen>
+    <dimen name="driverform_driversnametext_marginRight">18dp</dimen>
+    <dimen name="driverform_drivername_reason_btn_marginTop">2dp</dimen>
+    <dimen name="driverform_linearLayout3_marginTop">52dp</dimen>
+    <dimen name="driverform_nicnoofdrivertext_marginTop">58dp</dimen>
+    <dimen name="driverform_relationship_spinner_marginTop">53dp</dimen>
+    <dimen name="driverform_linearLayout2_marginTop">54dp</dimen>
+    <dimen name="driverform_linearLayout2_marginLeft">12dp</dimen>
+    <dimen name="driverform_linearLayout11_marginTop">56dp</dimen>
+    <dimen name="driverform_linearLayout112_marginTop">56dp</dimen>
+    <dimen name="driverform_linearLayout23_height">68dp</dimen>
+    <dimen name="driverform_linearLayout23_marginTop">45dp</dimen>
+    <dimen name="driverform_linearLayout15_width">300dp</dimen>
+    <dimen name="driverform_linearLayout15_marginTop">11dp</dimen>
+    <dimen name="driverform_linearLayout15_marginRight">75dp</dimen>
+    <dimen name="driverform_competence_spinner_paddingLeft">12dp</dimen>
+    <dimen name="driverform_competence_spinner_paddingRight">120dp</dimen>
+    
+    <!-- New Margin values for driver form NIC type Spinner
+    	By: Thisaru Guruge
+    	Date: 29 / 01 /2016
+     -->
+    <dimen name="driverform_NICType_spinner_marginRight">30dp</dimen>
+    <!-- 
+    	Thisaru Guruge
+    	08/02/2016
+    	New Dimentions for NIC type selecting Spinner
+     -->
+     <dimen name="driverform_linearLayout30_width">320dp</dimen>
+    
+    <dimen name="driverform_linearLayout16_width">240dp</dimen>
+    <dimen name="driverform_linearLayout16_height">60dp</dimen>
+    <dimen name="driverform_linearLayout16_marginRight">49dp</dimen>
+    <dimen name="driverform_reasonButton_marginRight">0dp</dimen>
+    <dimen name="driverform_body_linearLayout1_height">130dp</dimen>
+    <dimen name="driverform_body_linearLayout2_height">122dp</dimen>
+    <dimen name="driverform_body_linearLayout3_height">119dp</dimen>
+    <dimen name="driverform_body_linearLayout4_height">124dp</dimen>
+    <dimen name="driverform_body_linearLayout5_height">116dp</dimen>
+    <dimen name="driverform_body_linearLayout6_height">121dp</dimen>
+    <dimen name="driverform_body_linearLayout7_height">119dp</dimen>
+    <dimen name="driverform_body_linearLayout8_height">121dp</dimen>
+    
+    <dimen name="vehicleform_whitebackLL_width">722dp</dimen>
+    <dimen name="vehicleform_whitebackLL_height">970dp</dimen>
+    <dimen name="vehicleform_reasonButton_marginTop">28dp</dimen>
+    <dimen name="vehicleform_reasonButton_marginLeft">-28dp</dimen>
+    <dimen name="vehicleform_meterReadingText_marginTop">52dp</dimen>
+    <dimen name="vehicleform_meterReadingText_paddingLeft">10dp</dimen>
+    <dimen name="vehicleform_linearLayout3_marginTop">5dp</dimen>
+    <dimen name="vehicleform_linearLayout3_marginLeft">420dp</dimen>
+    <dimen name="vehicleform_pointOfImpact_marginRight">50dp</dimen>
+    <dimen name="vehicleform_button_marginTop">4dp</dimen>
+    <dimen name="vehicleform_spinner_marginTop">69dp</dimen>
+    <dimen name="vehicleform_addButton_width">80dp</dimen>
+    <dimen name="vehicleform_addButton_height">76dp</dimen>
+    <dimen name="vehicleform_chassisNo_marginTop">69dp</dimen>
+    <dimen name="vehicleform_LL_height">127dp</dimen>
+    <dimen name="vehicleform_LL2_height">85dp</dimen>
+    <dimen name="vehicleform_LL3_height">156dp</dimen>
+    <dimen name="vehicleform_engineText_marginTop">62dp</dimen>
+    <dimen name="vehicleform_engineButton_marginTop">20dp</dimen>
+    <dimen name="vehicleform_meterReadingText_marginLeft">60dp</dimen>
+    
+    <dimen name="otheritems_typeofgoodscarriedtext_marginTop">71dp</dimen>
+    <dimen name="otheritems_weightofgoodscarriedtext_marginTop">57dp</dimen>
+    <dimen name="otheritems_damagestothegoodstext_marginTop">58dp</dimen>
+    <dimen name="otheritems_overloaded_spinner_marginTop">55dp</dimen>
+    <dimen name="otheritems_is_overweight_contributory_spinner_marginTop">53dp</dimen>
+    <dimen name="otheritems_othervehiclesinvolvedtext_marginTop">58dp</dimen>
+    <dimen name="otheritems_thirdpartydamagespropertytext_marginTop">58dp</dimen>
+    <dimen name="otheritems_injuriestext_marginTop">60dp</dimen>
+    <dimen name="otheritems_body_LinearLayout1_height">133dp</dimen>
+    <dimen name="otheritems_body_LinearLayout2_height">118dp</dimen>
+    <dimen name="otheritems_body_LinearLayout3_height">121dp</dimen>
+    <dimen name="otheritems_body_LinearLayout4_height">121dp</dimen>
+    <dimen name="otheritems_body_LinearLayout5_height">115dp</dimen>
+    <dimen name="otheritems_body_LinearLayout6_height">118dp</dimen>
+    <dimen name="otheritems_body_LinearLayout7_height">118dp</dimen>
+    <dimen name="otheritems_body_LinearLayout8_height">126dp</dimen>
+    
+    
+    <dimen name="technicalreviews_claim_processing_branch_marginTop">70dp</dimen>
+    <dimen name="technicalreviews_purpose_of_journey_spinner_marginTop">60dp</dimen>
+    <dimen name="technicalreviews_nearestpolicestation_marginTop">58dp</dimen>
+    <dimen name="technicalreviews_pavvaluetext_marginTop">61dp</dimen>
+    <dimen name="technicalreviews_consistency_by_csr_spinner_marginTop">62dp</dimen>
+    <dimen name="technicalreviews_LinearLayout02_marginTop">12dp</dimen>
+    <dimen name="technicalreviews_LinearLayout02_marginLeft">360dp</dimen>
+    <dimen name="technicalreviews_LinearLayout03_marginTop">10dp</dimen>
+    <dimen name="technicalreviews_imagesbutton_width">80dp</dimen>
+    <dimen name="technicalreviews_imagesbutton_height">76dp</dimen>
+    <dimen name="technicalreviews_imagesbutton_marginRight">50dp</dimen>
+    <dimen name="technicalreviews_middleButton_margin">6dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout1_height">130dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout2_height">122dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout3_height">115dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout4_height">118dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout5_height">133dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout6_height">108dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout7_height">98dp</dimen>
+    <dimen name="technicalreviews_body_LinearLayout8_height">146dp</dimen>
+    
+    
+    <dimen name="imagelist_middle_textView_width">600dp</dimen>
+    <dimen name="imagelist_middle_textView_margin">13dp</dimen>
+    <dimen name="imagelist_middle_textView_paddingLeft">15dp</dimen>
+    <dimen name="imagelist_middle_textView_textSize">14pt</dimen>
+    <dimen name="imagelist_middle_imageView_width">42dp</dimen>
+    <dimen name="imagelist_middle_imageView_height">50dp</dimen>
+    <dimen name="imagelist_middle_imageView_marginTop">8dp</dimen>
+    
+    <dimen name="paint_linearLayoutCanvasWrapper_width">800dp</dimen>
+    <dimen name="paint_linearLayoutCanvasWrapper_height">1060dp</dimen>
+    <dimen name="paint_linearLayout5_marginTop">700dp</dimen>
+    <dimen name="paint_button_width">60dp</dimen>
+    <dimen name="paint_button_height">90dp</dimen>
+    <dimen name="paint_button_marginTop">20dp</dimen>
+    <dimen name="paint_button_androidwidth">100dp</dimen>
+    <dimen name="paint_bottombar_marginTop">74dp</dimen>
+    
+    <dimen name="radiobuttongroup_width">150dp</dimen>
+    <dimen name="radiobuttongroup_paddingLeft">50dp</dimen>
+    <dimen name="radiobuttongroup_textSize">15pt</dimen>
+    <dimen name="radiobuttonchild_childname_width">350dp</dimen>
+    <dimen name="radiobuttonchild_childname_paddingLeft">80dp</dimen>
+    <dimen name="radiobutton_main_height">950dp</dimen>
+    <dimen name="radiobuttonchild_textSize">11pt</dimen>
+    <dimen name="radiobuttonchild_rgb_width">150dp</dimen>
+    
+    
+     <dimen name="multilevel_expandable_height">870dp</dimen>
+    <dimen name="multilevel_linearLayout0_marginTop">15dp</dimen>
+    <dimen name="multilevel_textView2_marginLeft">15dp</dimen>
+    <dimen name="multilevel_textView2_marginRight">7dp</dimen>
+    <dimen name="multilevel_textSize">10pt</dimen>
+    <dimen name="multilevel_damagedItemsOtherField_width">610dp</dimen>
+    <dimen name="multilevel2_paddingLeft">50dp</dimen>
+    <dimen name="multilevel2_textSize">13pt</dimen>
+    <dimen name="multilevel3_paddingLeft">100dp</dimen>
+    <dimen name="multilevel3_textSize">12pt</dimen>
+    <dimen name="multilevel3_marginLeft">13dp</dimen>
+    <dimen name="multilevel4_marginLeft">60dp</dimen>
+    <dimen name="multilevel4_textView_width">480dp</dimen>
+    <dimen name="multilevel4_textView_margin">10dp</dimen>
+    <dimen name="multilevel4_textView_textSize">10pt</dimen>
+    <dimen name="multilevel4_textView2_width">20dp</dimen>
+    <dimen name="multilevel4_textView2_textSize">10pt</dimen>
+    <dimen name="multilevel4_textView_marginTop">10dp</dimen>
+    <dimen name="multilevel4_checkBox_marginTop">1dp</dimen>
+    <dimen name="multilevel_marginTop">4dp</dimen>
+    <dimen name="multilevel_LL_height">49dp</dimen>
+    <dimen name="multilevel4_LL_paddingLeft">80dp</dimen>
+    
+    <dimen name="pointOfImpact_LL_marginTop">67dp</dimen>
+    
+    <dimen name="pendingjoblist_height">55dp</dimen>
+    <dimen name="pendingjoblist_paddingLeft">60dp</dimen>
+    <dimen name="pendingjoblist_paddingTop">10dp</dimen>
+    <dimen name="pendingjoblist_textSize">14pt</dimen>
+    
+    <dimen name="image_gallery_main_PhoneImageGrid_marginTop">10dp</dimen>
+    <dimen name="image_gallery_main_PhoneImageGrid_height">940dp</dimen>
+    <dimen name="image_gallery_main_PhoneImageGrid_columnWidth">120dp</dimen>
+    <dimen name="image_gallery_main_PhoneImageGrid_verticalSpacing">10dp</dimen>
+    <dimen name="galleryitem_view_thumbImage_width">180dp</dimen>
+    <dimen name="galleryitem_itemCheckBox_marginTop">5dp</dimen>
+    <dimen name="galleryitem_itemCheckBox_marginRight">19dp</dimen>
+    <dimen name="imagegalleryview_PhoneImageGrid_horizontalSpacing">8dp</dimen>
+    <dimen name="imagegallery_thumbImage_width">130dp</dimen>
+    <dimen name="galleryitem_view_thumbImage_height">140dp</dimen>
+    
+    <dimen name="possible_dr_textView_marginRight">7dp</dimen>
+    
+    <dimen name="searchlist_custom_LL_height">40dp</dimen>
+    <dimen name="searchlist_custom_marginLeft">5dp</dimen>
+    <dimen name="searchlist_custom_marginTop">5dp</dimen>
+    <dimen name="searchlist_custom_marginLeft2">10dp</dimen>
+    <dimen name="searchlist_custom_marginTop2">10dp</dimen>
+    <dimen name="searchlist_custom_LL_marginBottom">8dp</dimen>
+    <dimen name="searchlist_custom_textView_marginRight">20dp</dimen>
+    <dimen name="searchlist_custom_marginLeft3">30dp</dimen>
+    <dimen name="searchlist_custom1_marginLeft">40dp</dimen>
+    <dimen name="searchlist_custom1_vehicleno_marginLeft">20dp</dimen>
+    <dimen name="searchlist_custom1_marginLeft2">30dp</dimen>
+    
+    <dimen name="searchjoblist_pendingjobs_listview_height">887dp</dimen>
+
+    <dimen name="comment_custom_marginLeft5">5dp</dimen>
+    <dimen name="comment_custom_marginLeft10">10dp</dimen>
+    <dimen name="comment_custom_marginTop">5dp</dimen>
+    <dimen name="comment_custom_textSize">10pt</dimen>
+    <dimen name="comment_custom_textSizeLarge">12pt</dimen>
+    <dimen name="comment_custom_marginBottom">8dp</dimen>
+    <dimen name="visit_status_width">170dp</dimen>
+    <dimen name="visit_status_height">35dp</dimen>
+    
+    <dimen name="spinner_margin_left">0dp</dimen>
+    <dimen name="spinner_margin_left2">0dp</dimen>
+
+    <dimen name="other_height">81dp</dimen>
+    <dimen name="technical_form_further_review_height">130.5dp</dimen>
+    <dimen name="spinner_margin_top_further_review">55.8dp</dimen>
+
+
+</resources>

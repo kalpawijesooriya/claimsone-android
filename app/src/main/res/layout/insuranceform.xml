@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#fff"
+    android:onClick="onClick_keyboardClose">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edittext_border"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:onClick="onClick_keyboardClose"
+        android:orientation="vertical" >
+        <RelativeLayout
+        android:id="@+id/accidentform_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.2"
+        android:background="@drawable/accidentform_top_header">
+    </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14">
+
+        <LinearLayout
+            android:id="@+id/accidentform_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:paddingBottom="10dp" >
+
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15px" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Name of Insured"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+
+                <EditText
+                    android:id="@+id/nameofinsuredtext"
+                    android:paddingStart="0dp"
+                    android:layout_gravity="center"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:lines="1"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15px" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No of Insured"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+
+                <EditText
+                    android:id="@+id/contactnoofinsuredtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="@dimen/editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Policy Cover Note No"
+                    android:layout_marginBottom="5dp"
+                    style="@style/LabelStyle" />
+                <EditText
+                    android:id="@+id/policycovernotenotext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edittext_border"
+                    android:paddingStart="0dp"
+                    android:layout_gravity="center"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15px"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15px"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Policy Cover Note Period"
+                        style="@style/LabelStyle" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="(DD MM YY)"
+                        android:textColor="#B2BEB5"
+                        style="@style/LabelStyle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:background="#00FFFFFF"
+                    android:paddingLeft="5dp"
+                    android:clickable="true"
+                    android:onClick="onClick_keyboardClose">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:text="From : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="@style/LabelStyle"
+                        android:textSize="7pt" />
+
+                    <EditText
+                        android:id="@+id/datetextboxIF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="DD"
+                        android:hint="DD"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:layout_marginLeft="15dp"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/dateseparator1IF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:text="/"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editText_textSize" />
+
+                    <EditText
+                        android:id="@+id/monthtextboxIF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="MM"
+                        android:hint="MM"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/dateseparator2IF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:text="/"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editText_textSize" />
+
+                    <EditText
+                        android:id="@+id/yeartextboxIF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edittext_border"
+                        android:clickable="true"
+                        android:contentDescription="YY"
+                        android:hint="YY"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="8pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00FFFFFF"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:clickable="true"
+                    android:onClick="onClick_keyboardClose">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:text="To : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        style="@style/LabelStyle"
+                        android:textSize="7pt" />
+
+                    <EditText
+                        android:id="@+id/datetextboxIF2"
+                        android:clickable="true"
+                        android:contentDescription="DD"
+                        android:hint="DD"
+                        android:background="@drawable/edittext_border"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="35dp"
+                        android:textSize="8pt"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"/>
+
+                    <TextView
+                        android:id="@+id/dateseparator1IF2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:text="/"
+                        android:layout_marginLeft="5dp"
+                        android:background="#00FFFFFF"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editText_textSize" />
+
+                    <EditText
+                        android:id="@+id/monthtextboxIF2"
+                        android:clickable="true"
+                        android:contentDescription="MM"
+                        android:hint="MM"
+                        android:background="@drawable/edittext_border"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="8pt"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"/>
+
+                    <TextView
+                        android:id="@+id/dateseparator2IF2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:clickable="false"
+                        android:text="/"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:background="#00FFFFFF"
+                        android:textSize="@dimen/editText_textSize" />
+
+                    <EditText
+                        android:id="@+id/yeartextboxIF2"
+                        android:clickable="true"
+                        android:background="@drawable/edittext_border"
+                        android:contentDescription="YY"
+                        android:hint="YY"
+                        android:imeOptions="flagNavigateNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:saveEnabled="true"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/date_height"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="8pt"
+                        android:paddingLeft="5.5dip"
+                        android:paddingRight="5.5dip"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15px"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Policy Cover Note Serial No"
+                    style="@style/LabelStyle" />
+                <EditText
+                    android:id="@+id/policycovernoteserialnotext"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingStart="0dp"
+                    android:layout_gravity="center"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cover Note Issued By"
+                    style="@style/LabelStyle" />
+                <EditText
+                    android:id="@+id/covernoteissuedbytext"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingStart="0dp"
+                    android:layout_gravity="center"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/insuranceform_body_LinearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reason for Issuing Cover Note"
+                    style="@style/LabelStyle" />
+
+                <EditText
+                    android:id="@+id/reasonsforissuingcovernotetext"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingStart="0dp"
+                    android:layout_gravity="center"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="actionDone"
+                    android:inputType="textShortMessage"
+                    android:lines="1"
+                    android:maxLength="150"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/editText_paddingLeft"
+                    android:singleLine="true"
+                    android:textSize="8pt" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_marginBottom="5dp">
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp"
+        android:baselineAligned="true"
+        android:clickable="true"
+        android:onClick="onClick_keyboardClose"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/InsuranceformBackButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/navigation_button_boder"
+            android:clickable="true"
+            android:textSize="9pt"
+            android:onClick="on_click_cancel_button"
+            android:text="Back"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:textColor="#fff" >
+        </Button>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1">
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/InsuranceformNextButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_button_boder"
+            android:text="Next"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:onClick="on_click_next_button" >
+        </Button>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

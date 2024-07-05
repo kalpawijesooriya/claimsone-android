@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/accidentform_header"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/header_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/accidentform_top_header"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accidentform_body"
+        android:layout_width="@dimen/vehicleform_whitebackLL_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/jobnotext"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentform_jobnotext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_dash"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPostalAddress"
+                android:lines="1"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/vehiclenotext"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentLL1_text_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_dash"
+                android:imeOptions="flagNavigateNext"
+                android:lines="1"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a2"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/locationofaccidenttext"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentform_locationofaccidenttext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPostalAddress"
+                android:lines="1"
+                android:maxLength="70"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a3"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentform_linearLayout2_marginTop"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/datetextbox"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="DD"
+                    android:hint="DD"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="0dip"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/monthtextbox"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/monthtextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/yeartextbox"
+                    android:layout_width="@dimen/yeartextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="1dip"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="YY"
+                    android:hint="YY"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/hourstextbox"
+                    android:layout_width="@dimen/accidentform_hourstextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/accidentform_hourstextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="HH"
+                    android:hint="HH"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_hourstextbox_paddingLeft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/timeseparator"
+                    android:layout_width="@dimen/dateseparator_width"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text=":"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/minutestextbox"
+                    android:layout_width="@dimen/accidentform_minutestextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/accidentform_minutestextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="1dp"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <Spinner
+                    android:id="@+id/ampmspinner"
+                    android:layout_width="@dimen/accidentform_ampmspinner_width"
+                    android:layout_height="@dimen/date_height"
+                    android:background="@drawable/fieldtextview"
+                    android:paddingRight="1dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutA"
+                android:layout_width="@dimen/accidentform_linearLayoutA_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentform_linearLayoutA_marginTop"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose" >
+
+                <EditText
+                    android:id="@+id/datetextboxA"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="DD"
+                    android:hint="DD"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparator1A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/monthtextboxA"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/monthtextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparator2A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/yeartextboxA"
+                    android:layout_width="@dimen/yeartextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="1dip"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="YY"
+                    android:hint="YY"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/hourstextboxA"
+                    android:layout_width="@dimen/accidentform_hourstextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/accidentform_hourstextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="HH"
+                    android:hint="HH"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/accidentform_hourstextbox_paddingLeft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/timeseparatorA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text=":"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/minutestextboxA"
+                    android:layout_width="@dimen/accidentform_minutestextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/accidentform_minutestextbox_marginLeft"
+                    android:background="@drawable/fieldtextview"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="1dp"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <Spinner
+                    android:id="@+id/ampmspinnerA"
+                    android:layout_width="@dimen/accidentform_ampmspinner_width"
+                    android:layout_height="@dimen/date_height"
+                    android:background="@drawable/fieldtextview"
+                    android:paddingRight="1dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a5"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/contactnotext"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentform_contactnotext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a6"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/nameofcallertext"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/accidentform_nameofcallertext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accidentform_body_LinearLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accidentform_LL_height"
+            android:layout_gravity="center"
+            android:background="@drawable/a7"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/vehicletypeandcolortext"
+                android:layout_width="@dimen/saForm_editText_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/accidentform_vehicletypeandcolortext_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="actionDone"
+                android:inputType="textShortMessage"
+                android:lines="1"
+                android:maxLength="80"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/accidentform_editText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/editText_textSize" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLyr"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/bottom_button_bar_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/accidentform_bottomLyr_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:clickable="true"
+        android:onClick="onClick_keyboardClose" >
+
+        <Button
+            android:id="@+id/AccidentDetailsCancelButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/cancel_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_cancel_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/AccidentDetailsNextButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button2_marginLeft"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/next_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_next_button" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainlayout"
+    android:background="@drawable/slic_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/menu_back1"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_weight="4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/motorclaimformbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/xml_mainmenu_saform"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:onClick="on_motor_claim_form_button_click" />
+
+        <Button
+            android:id="@+id/visitsbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mainmenu_visits"
+            android:clickable="true"
+            android:onClick="on_click_visit_button" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/draftsbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mainmenu_drafts"
+            android:clickable="true"
+            android:onClick="on_click_drafts_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/searchjobsbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_mainmenu_search"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:onClick="on_click_search_button" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/copyimagesbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_mainmenu_copyfiles"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:onClick="on_click_copy_images_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/logoutbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_mainmenu_logout"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:onClick="on_click_logout_button" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

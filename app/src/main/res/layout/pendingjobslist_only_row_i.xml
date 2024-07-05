@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/pendingjoblist_height"
+    android:background="@drawable/listview_select_only_row_xml_i"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pedingjobslist_item_jobno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/pendingjoblist_paddingLeft"
+        android:paddingTop="@dimen/pendingjoblist_paddingTop"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pendingjoblist_textSize" >
+    </TextView>
+
+</LinearLayout>

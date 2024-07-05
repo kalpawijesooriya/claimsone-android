@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listlayoutview"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/searchlist_custom_LL_height"
+    android:background="@drawable/listview_select_only_row_xml"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/searchlist_custom1_marginLeft"
+        android:layout_marginTop="@dimen/searchlist_custom_marginTop"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_list_margin_left"
+            android:text="Vehicle No:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/draft_top_listitem_fontsize" />
+
+        <TextView
+            android:id="@+id/vehicleno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/searchlist_custom1_vehicleno_marginLeft"
+            android:textColor="@color/black"
+            android:textSize="@dimen/draft_top_listitem_fontsize" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/searchlist_custom_LL_marginBottom"
+        android:layout_marginLeft="@dimen/searchlist_custom1_marginLeft2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/search_list_margin_left"
+                android:text="Job No:"
+                android:textSize="@dimen/draft_listitem_fontsize" />
+
+            <TextView
+                android:id="@+id/jobno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/searchlist_custom_marginLeft"
+                android:text=""
+                android:textSize="@dimen/draft_listitem_fontsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/list_margin_left"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="Visited Date:"
+                android:textSize="@dimen/draft_listitem_fontsize" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/searchlist_custom_marginLeft"
+                android:layout_marginRight="@dimen/searchlist_custom_textView_marginRight"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/draft_listitem_fontsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

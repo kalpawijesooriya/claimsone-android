@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLinearlayout1"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/image_gallery_header"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imagelist_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_gravity="center"
+        android:background="@drawable/imagelist_background1"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/PhoneImageGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/image_gallery_main_PhoneImageGrid_marginTop"
+            android:layout_marginBottom="@dimen/image_gallery_main_PhoneImageGrid_marginTop"
+            android:columnWidth="@dimen/image_gallery_main_PhoneImageGrid_columnWidth"
+            android:gravity="center"
+            android:horizontalSpacing="0dip"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/image_gallery_main_PhoneImageGrid_verticalSpacing">
+
+        </GridView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bottom_button_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/DriverFormBackButton"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button"></Button>
+
+        <Button
+            android:id="@+id/selectBtn"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/copy_button_xml" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drivingLicense">
+        <item>Old</item>
+        <item>New</item>
+    </string-array>
+    <string-array name="driverinsuredrelationship">
+        <item>Employee</item>
+        <item>Spouse</item>
+        <item>Relations</item>
+        <item>Friend</item>
+        <item>No relation – Rented vehicle</item>
+        <item>Insured</item>
+    </string-array>
+    <string-array name="inspectionTypes">
+        <item>ARI</item>
+        <item>DR</item>
+        <item>Seen Visit</item>
+        <item>Supplementary 1</item>
+        <item>Supplementary 2</item>
+        <item>Supplementary 3</item>
+        <item>Supplementary 4</item>
+        <item>Special Report 1</item>
+        <item>Special Report 2</item>
+        <item>Special Report 3</item>
+        <item>Special Report 4</item>
+        <item>Salvage Report</item>
+        <item>Garage Inspection 1</item>
+        <item>Garage Inspection 2</item>
+        <item>Garage Inspection 3</item>
+    </string-array>
+    <string-array name="timePeriodArr">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="typeofdrivinglicense">
+        <item>OTHER</item>
+        <item>MTA 32</item>
+        <item>MTA 37</item> <!-- Thisaru Guruge | 25/01/2016 | Added this new Type as of the requirement -->
+        <item>MTA 39</item>
+        <item>CMT 49</item>
+        <item>INTLIC</item>
+    </string-array>
+    <string-array name="competence">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="uploadselectiontype">
+        <item>Capture through tab camera</item>
+        <item>Copy images to tab</item>
+    </string-array>
+    <string-array name="uploadImageType">
+        <item>Accident Images</item>
+        <item>Document Images</item>
+    </string-array>
+    <string-array name="onsiteestOpt">
+        <item>Not Available</item>
+        <item>Available</item>
+    </string-array>
+    <string-array name="purposeOfJourney">
+        <item>Private</item>
+        <item>Hiring</item>
+        <item>Rent a Car</item>
+        <item>Official</item>
+    </string-array>
+    <string-array name="nearestPoliceStation">
+        <item>Agarapathana</item>
+        <item>Ahangama</item>
+        <item>Ahungalla</item>
+        <item>Airport Katunayake</item>
+        <item>Akkaraipattu</item>
+        <item>Akmeemana</item>
+        <item>Akuressa</item>
+        <item>Alawathugoda</item>
+        <item>Alawwa</item>
+        <item>Aluthgama</item>
+        <item>Ambalangoda</item>
+        <item>Ambalantota</item>
+        <item>Ambanpola</item>
+        <item>Ampara</item>
+        <item>Anamaduwa</item>
+        <item>Angulana</item>
+        <item>Angunakolapelessa</item>
+        <item>Anguruwatota</item>
+        <item>Ankumbura</item>
+        <item>Anuradhapura</item>
+        <item>Aralaganwila</item>
+        <item>Aranayaka</item>
+        <item>Atchtchuweli</item>
+        <item>Athurugiriya</item>
+        <item>Avissawella</item>
+        <item>Ayagama</item>
+        <item>Ayththayamalai</item>
+        <item>Badalkumbura</item>
+        <item>Baddegama</item>
+        <item>Badulla</item>
+        <item>Baduraliya</item>
+        <item>Bakamuna</item>
+        <item>Bakkiella</item>
+        <item>Balagolla</item>
+        <item>Balangoda</item>
+        <item>Bambalapitiya</item>
+        <item>Bandaragama</item>
+        <item>Bandarawela</item>
+        <item>Batticaloa</item>
+        <item>Beliatta</item>
+        <item>Bentota</item>
+        <item>Beruwala</item>
+        <item>Bibile</item>
+        <item>Bingiriya</item>
+        <item>Biyagama</item>
+        <item>Bluemendhal</item>
+        <item>BMICH</item>
+        <item>Bogawanthalawa</item>
+        <item>Boralesgamuwa</item>
+        <item>Borella</item>
+        <item>Bulathkohupitiya</item>
+        <item>Bulathsinhala</item>
+        <item>Buttala</item>
+        <item>Central Camp</item>
+        <item>Chavakachcheri</item>
+        <item>Chavalakade</item>
+        <item>Chettikulam</item>
+        <item>Chilaw</item>
+        <item>China Bay</item>
+        <item>Chunnakam</item>
+        <item>Cinnamon Garden</item>
+        <item>Colombo - Harbour</item>
+        <item>Dalada Maligawa</item>
+        <item>Dam Street</item>
+        <item>Damana</item>
+        <item>Dambagalla</item>
+        <item>Dambulla</item>
+        <item>Dankotuwa</item>
+        <item>Davulagala</item>
+        <item>Dayagma</item>
+        <item>Dedigama</item>
+        <item>Dehiattakandiya</item>
+        <item>Dehiwala</item>
+        <item>Delft</item>
+        <item>Dematagoda</item>
+        <item>Deniyaya</item>
+        <item>Deraniyagala</item>
+        <item>Dikwella</item>
+        <item>Dimbula Pathana</item>
+        <item>Divulapitiya</item>
+        <item>Diyatalawa</item>
+        <item>Dodangoda</item>
+        <item>Dompe</item>
+        <item>Dummalasooriya</item>
+        <item>Eheliyagoda</item>
+        <item>Ella</item>
+        <item>Elpitiya</item>
+        <item>Embilipitiya</item>
+        <item>Eppawala</item>
+        <item>Eravur</item>
+        <item>Etampitiya</item>
+        <item>Ethimale</item>
+        <item>Forshore</item>
+        <item>Fort</item>
+        <item>Galagedara</item>
+        <item>Galaha</item>
+        <item>Galenbendunuwewa</item>
+        <item>Galewela</item>
+        <item>Galgamuwa</item>
+        <item>Galkiriyagama</item>
+        <item>Galle</item>
+        <item>Galle - Harbour</item>
+        <item>Galnewa</item>
+        <item>Gampaha</item>
+        <item>Gampola</item>
+        <item>Gandara</item>
+        <item>Ganemulla</item>
+        <item>Ginigathhena</item>
+        <item>Girandurukotte</item>
+        <item>Giribawa</item>
+        <item>Giriulla</item>
+        <item>Godakawela</item>
+        <item>Gokarella</item>
+        <item>Gomarankadawala</item>
+        <item>Gonagannara</item>
+        <item>Grandpass</item>
+        <item>Habaraduwa</item>
+        <item>Habarana</item>
+        <item>Hakmana</item>
+        <item>Hambantota</item>
+        <item>Hambegamuwa</item>
+        <item>Hanguranketha</item>
+        <item>Hanwella</item>
+        <item>Haputale</item>
+        <item>Hasalaka</item>
+        <item>Hataraliyadda</item>
+        <item>Hatton</item>
+        <item>Hemmatagama</item>
+        <item>Hettipola</item>
+        <item>Hikkaduwa</item>
+        <item>Hindogama</item>
+        <item>Hingurakgoda</item>
+        <item>Hiniduma</item>
+        <item>Homagama</item>
+        <item>Horana</item>
+        <item>Horowpathana</item>
+        <item>Hungama</item>
+        <item>Ilewaly</item>
+        <item>Iluppakadawai</item>
+        <item>Inginiyagala</item>
+        <item>Ingiriya</item>
+        <item>Ja-Ela</item>
+        <item>Jaffna</item>
+        <item>Kadawatha</item>
+        <item>Kadugannawa</item>
+        <item>Kahatagasdigiliya</item>
+        <item>Kahathuduwa</item>
+        <item>Kahawatta</item>
+        <item>Kalawana</item>
+        <item>Kalawanchikudy</item>
+        <item>Kalkudah</item>
+        <item>Kalmunai</item>
+        <item>Kalpitiya</item>
+        <item>Kaltota</item>
+        <item>Kalutara North</item>
+        <item>Kalutara South</item>
+        <item>Kaluwaragaswewa</item>
+        <item>Kamburupitiya</item>
+        <item>Kananke</item>
+        <item>Kandaketiya</item>
+        <item>Kandana</item>
+        <item>Kandapola</item>
+        <item>Kandy</item>
+        <item>Kangarayankulam</item>
+        <item>Kankasanthurai</item>
+        <item>Kantale</item>
+        <item>Karadiyanaru</item>
+        <item>Karandeniya</item>
+        <item>Katana</item>
+        <item>Kataragama</item>
+        <item>Kattankudy</item>
+        <item>Katugastota</item>
+        <item>Katunayake</item>
+        <item>Katupotha</item>
+        <item>Katuwana</item>
+        <item>Kayts</item>
+        <item>Kebethigollewa</item>
+        <item>Kegalle</item>
+        <item>Kekirawa</item>
+        <item>Kelaniya</item>
+        <item>Keselwatta</item>
+        <item>Kilinochchi</item>
+        <item>Kinniya</item>
+        <item>Kiribathgoda</item>
+        <item>Kiriella</item>
+        <item>Kirindiwela</item>
+        <item>Kirulapone</item>
+        <item>Kithulgala</item>
+        <item>Kobeigane</item>
+        <item>Kochchikade</item>
+        <item>Kodokamam</item>
+        <item>Kohuwala</item>
+        <item>Kokkadicholai</item>
+        <item>Kollupitiya</item>
+        <item>Kolonne</item>
+        <item>Kopay</item>
+        <item>Kosgama</item>
+        <item>Kosgoda</item>
+        <item>Koslanda</item>
+        <item>Koswatta</item>
+        <item>Kotadeniyawa</item>
+        <item>Kotahena</item>
+        <item>Kotawehera</item>
+        <item>Kotmale</item>
+        <item>Kottawa</item>
+        <item>Kuchchuweli</item>
+        <item>Kuliyapitiya</item>
+        <item>Kurunegala</item>
+        <item>Kuruwita</item>
+        <item>Kuttigala</item>
+        <item>Laggala</item>
+        <item>Lindula</item>
+        <item>lunugala</item>
+        <item>Lunugamvehera</item>
+        <item>Madampe</item>
+        <item>Madolsima</item>
+        <item>Madu</item>
+        <item>Mahabage(Welisara)</item>
+        <item>Mahaoya</item>
+        <item>Maharagama</item>
+        <item>Mahawela</item>
+        <item>Mahawilachchiya</item>
+        <item>Mahiyangane</item>
+        <item>Maho</item>
+        <item>Mangalagama</item>
+        <item>Mallavi</item>
+        <item>Malwathuhiripitiya</item>
+        <item>Manippai</item>
+        <item>Mankulam</item>
+        <item>Mannar</item>
+        <item>Maradana</item>
+        <item>Marawila</item>
+        <item>Maskeliya</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Mathugama</item>
+        <item>Mathurata</item>
+        <item>Mattakkuliya</item>
+        <item>Mawanella</item>
+        <item>Mawarala</item>
+        <item>Mawathagama</item>
+        <item>Medagama</item>
+        <item>Medawachchiya</item>
+        <item>Medirigiriya</item>
+        <item>Meegahatenna</item>
+        <item>Meegallewa</item>
+        <item>Meetiyagoda</item>
+        <item>Megahawatta</item>
+        <item>Menikhinna</item>
+        <item>Middeniya</item>
+        <item>Mihintale</item>
+        <item>Millaniya</item>
+        <item>Minneriya</item>
+        <item>Minuwangoda</item>
+        <item>Mirigama</item>
+        <item>Mirihana</item>
+        <item>Modara</item>
+        <item>Monaragala</item>
+        <item>Moragahahena</item>
+        <item>Moratumulla</item>
+        <item>Moratuwa</item>
+        <item>Morawaka</item>
+        <item>Morawewa</item>
+        <item>Mt. Lavinia</item>
+        <item>Mulankavill</item>
+        <item>Mulathive</item>
+        <item>Mulleriyawa</item>
+        <item>Mulliyaweli</item>
+        <item>Mundalama</item>
+        <item>Murunkan</item>
+        <item>Muttur</item>
+        <item>Nachchikuda</item>
+        <item>Nagoda</item>
+        <item>Nallathanniya</item>
+        <item>Nanuoya</item>
+        <item>Narahenpita</item>
+        <item>Narammala</item>
+        <item>Naula</item>
+        <item>Kurunduwatta</item>
+        <item>Nawagamuwa</item>
+        <item>Nawagaththegama</item>
+        <item>Nawalapitiya</item>
+        <item>Negambo</item>
+        <item>Nelliadi</item>
+        <item>Neluwa</item>
+        <item>Nikaweratiya</item>
+        <item>Nittambuwa</item>
+        <item>Nivithigala</item>
+        <item>Nochchiyagama</item>
+        <item>Norton Bridge</item>
+        <item>Norwood</item>
+        <item>Nuwara-Eliya</item>
+        <item>Oddusudan</item>
+        <item>Omantha</item>
+        <item>Opanayake</item>
+        <item>Padaviya</item>
+        <item>Padiyathalawa</item>
+        <item>Padukka</item>
+        <item>Palali</item>
+        <item>Pallama</item>
+        <item>Pamunugama</item>
+        <item>Panadura(North)</item>
+        <item>Panadura(South)</item>
+        <item>Panamure</item>
+        <item>Pannala</item>
+        <item>Panwila</item>
+        <item>Passara</item>
+        <item>Payagala</item>
+        <item>Peliyagoda</item>
+        <item>Peradeniya</item>
+        <item>Pettah</item>
+        <item>Piliyandala</item>
+        <item>Pindeniya</item>
+        <item>Pitabaddara</item>
+        <item>Pitigala</item>
+        <item>Poddala</item>
+        <item>Point pedro</item>
+        <item>Polgahawela</item>
+        <item>Polonnaruwa</item>
+        <item>Polpithigama</item>
+        <item>Poonarin</item>
+        <item>Pothuhera</item>
+        <item>Pothuvil</item>
+        <item>Pudukuduirippu</item>
+        <item>Pugoda</item>
+        <item>Pulasthigama</item>
+        <item>Puliyankulama</item>
+        <item>Pulmudai</item>
+        <item>Pundaluoya</item>
+        <item>Pussellawa</item>
+        <item>Puttalam</item>
+        <item>Raddolugama</item>
+        <item>Ragala</item>
+        <item>Ragama</item>
+        <item>Rajangane</item>
+        <item>Rakwana</item>
+        <item>Rambukkana</item>
+        <item>Rangala</item>
+        <item>Rasnayakapura</item>
+        <item>Ratgama</item>
+        <item>Ratnapura</item>
+        <item>Rattota</item>
+        <item>Ridegama</item>
+        <item>Ruwanwella</item>
+        <item>Saliyawewa</item>
+        <item>Samanthurai</item>
+        <item>Sampoor</item>
+        <item>Sapugaskanda</item>
+        <item>Seeduwa</item>
+        <item>Serunuwara</item>
+        <item>Sevanagala</item>
+        <item>Sigiriya</item>
+        <item>Silawathurai</item>
+        <item>Siyambalanduwa</item>
+        <item>Slave Island</item>
+        <item>Sooriyawewa</item>
+        <item>Siripura</item>
+        <item>Tangalle</item>
+        <item>Teldeniya</item>
+        <item>Thalaimannar</item>
+        <item>Thalangama</item>
+        <item>Thalathuoya</item>
+        <item>Thalawa</item>
+        <item>Thalawakele</item>
+        <item>Thambalagamuwa</item>
+        <item>Thambuththegama</item>
+        <item>Thanamalvila</item>
+        <item>Thanthirimale</item>
+        <item>Thebuwana</item>
+        <item>Thelikada</item>
+        <item>Thellippalai</item>
+        <item>Theripeha</item>
+        <item>Thihagoda</item>
+        <item>Thiniyawala</item>
+        <item>Thirappane</item>
+        <item>Thirukkovil</item>
+        <item>Thisamaharama</item>
+        <item>Trincomalee</item>
+        <item>Tricomalee - Harbour</item>
+        <item>Udamaluwa</item>
+        <item>Udapussellawa</item>
+        <item>Udawalawa</item>
+        <item>Ududumbara</item>
+        <item>Udugama</item>
+        <item>Uhana</item>
+        <item>Uppuweli</item>
+        <item>Uragasmanhandiya</item>
+        <item>Urubokka</item>
+        <item>Uva Paranagama</item>
+        <item>Vakarai</item>
+        <item>Valachchenai</item>
+        <item>Vavunathive</item>
+        <item>Vavuniya</item>
+        <item>Vellavely</item>
+        <item>Velvetithurai</item>
+        <item>Veyangoda</item>
+        <item>Wadduwa</item>
+        <item>Wadukotte</item>
+        <item>Walapane</item>
+        <item>Walasmulla</item>
+        <item>Wanathavilluwa</item>
+        <item>Wanduramba</item>
+        <item>Wanela</item>
+        <item>Warakapola</item>
+        <item>Wariyapola</item>
+        <item>Watawela</item>
+        <item>Wattala</item>
+        <item>Wattegama</item>
+        <item>Wedithalathive</item>
+        <item>Weeraketiya</item>
+        <item>Weerambugedara</item>
+        <item>Weerangula</item>
+        <item>Weligama</item>
+        <item>Weligepola</item>
+        <item>Welikada</item>
+        <item>Welikanda</item>
+        <item>Welimada</item>
+        <item>Welioya</item>
+        <item>Welipenna</item>
+        <item>Weliweriya</item>
+        <item>Wellampitiya</item>
+        <item>Wellawa</item>
+        <item>Wellawatta</item>
+        <item>Wellawaya</item>
+        <item>Wennappuwa</item>
+        <item>Wewalwatta</item>
+        <item>Wilgamuwa</item>
+        <item>Wolfandhal</item>
+        <item>Yakkalamulla</item>
+        <item>Yatawatta</item>
+        <item>Yatiyantota</item>
+        <item>Panama</item>
+        <item>Maligawatta</item>
+        <item>Nedumkerni</item>
+        <item>Iratteperiyakulam</item>        
+        <item>Agbopura</item>
+        <item>Nawa Kurunduwatta</item>
+        <item>Nilawely</item>
+        <item>Palei</item>
+        <item>Suriyapura</item>
+    </string-array>
+
+    <string-array name="claimProcessingBranch">
+        <item>Aluthgama</item>
+        <item>Ambalangoda</item>
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Avissawella</item>
+        <item>Badulla</item>
+        <item>Bandarawela</item>
+        <item>Batticaloa</item>
+        <item>Chilaw</item>
+        <item>Dambulla</item>
+        <item>Embilipitiya</item>
+        <item>FBD Kandy</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Head Office</item>
+        <item>Horana</item>
+        <item>Ja Ela</item>
+        <item>Jaffna</item>
+        <item>Kadawatha</item>
+        <item>Kaduwela</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle</item>
+        <item>Kilinochchi</item>
+        <item>Kiribathgoda</item>
+        <item>Kuliyapitiya</item>
+        <item>Kurunegala</item>
+        <item>Kurunegala City</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Matugama</item>
+        <item>MELSIRIPURA</item>
+        <item>Narammala</item>
+        <item>Nawalapitiya</item>
+        <item>Negombo</item>
+        <item>Nikaweratiya</item>
+        <item>Nugegoda</item>
+        <item>Pilimathalawa</item>
+        <item>Puttalam</item>
+        <item>Ratmalana</item>
+        <item>Ratnapura</item>
+        <item>Vavuniya</item>
+        <item>Wariyapola</item>
+    </string-array>
+    
+    <string-array name="consinstency">
+        <item>Pending</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="errCodes">
+        <item>2000</item>
+        <item>801</item>
+        <item>802</item>
+    </string-array>
+    <string-array name="itemSentStatus">
+        <item>All</item>
+        <item>Completed</item>
+        <item>Deleted</item>
+        <item>Pending</item>
+    </string-array>
+    
+    <!-- 
+    Added by: Thisaru Guruge
+            Date: 29 / 01 / 2016
+            This is added to get the NIC types of the driver from the types:
+            	- Old NIC
+            	- New NIC
+            	- Passport
+            to the spinner "nicType_spinner"
+     -->
+    <string-array name="nicNoType">
+        <item>NIC (Old)</item>
+        <item>NIC (New)</item>
+        <item>Passport</item>
+    </string-array>
+
+    <string-array name="furtherReview">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TextView05"
+    android:layout_width="@dimen/textviewforspinner_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fieldtextview"
+    android:text=""
+    android:textColor="@color/black"
+    android:textSize="@dimen/editText_textSize" >
+
+</TextView>

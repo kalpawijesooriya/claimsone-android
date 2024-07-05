@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/vehicleform_header"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/header_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/accidentform_top_header"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whitebody_linearlayout"
+        android:layout_width="@dimen/vehicleform_whitebackLL_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/chassisLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL_height"
+            android:background="@drawable/chassis1"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/chasisnotext"
+                android:layout_width="@dimen/visit_chassisNo_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/visit_chassisNo_marginLeft"
+                android:layout_marginRight="@dimen/visit_chassisNo_marginRight"
+                android:layout_marginTop="@dimen/vehicleform_chassisNo_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPostalAddress"
+                android:lines="1"
+                android:maxLength="180"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/visit_editText_textSize" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/chassisno_reason_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/vehicleform_reasonButton_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_reasonButton_marginTop"
+                android:background="@drawable/reason_button_xml"
+                android:clickable="true"
+                android:onClick="on_click_chassisno_reason_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engineLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL_height"
+            android:background="@drawable/chassis2"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/enginenotext"
+                android:layout_width="@dimen/visit_chassisNo_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/visit_chassisNo_marginLeft"
+                android:layout_marginRight="@dimen/visit_chassisNo_marginRight"
+                android:layout_marginTop="@dimen/vehicleform_engineText_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:digits="@string/alphanumeric_specialcharacters"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="textPostalAddress"
+                android:lines="1"
+                android:maxLength="180"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/visit_editText_textSize" />
+
+            <Button
+                android:id="@+id/engineno_reason_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/vehicleform_reasonButton_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_engineButton_marginTop"
+                android:background="@drawable/reason_button_xml"
+                android:clickable="true"
+                android:onClick="on_click_engineno_reason_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/meterreadingLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL_height"
+            android:background="@drawable/chassis3" >
+
+            <EditText
+                android:id="@+id/meterreadingtext"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_marginLeft="@dimen/vehicleform_meterReadingText_marginLeft"
+                android:layout_marginRight="@dimen/visit_chassisNo_marginRight"
+                android:layout_marginTop="@dimen/vehicleform_meterReadingText_marginTop"
+                android:background="@drawable/fieldtextview"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/vehicleform_meterReadingText_paddingLeft"
+                android:singleLine="true"
+                android:textSize="@dimen/visit_editText_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL2_height"
+            android:background="@drawable/chassis4"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vehicleform_linearLayout3_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_linearLayout3_marginTop" >
+
+                <Button
+                    android:id="@+id/pointofimpactaddbutton"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:layout_marginRight="@dimen/vehicleform_pointOfImpact_marginRight"
+                    android:background="@drawable/add_button_xml"
+                    android:onClick="on_click_point_of_impact" />
+
+                <Button
+                    android:id="@+id/pointofimpactviewbutton"
+                    android:layout_width="@dimen/vehicleform_addButton_width"
+                    android:layout_height="@dimen/vehicleform_addButton_height"
+                    android:background="@drawable/view_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_pointofimpact_view_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL2_height"
+            android:background="@drawable/chassis5"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/damageditemsbutton"
+                android:layout_width="@dimen/vehicleform_addButton_width"
+                android:layout_height="@dimen/vehicleform_addButton_height"
+                android:layout_marginLeft="@dimen/vehicleform_linearLayout3_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="damageditems_button_click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL2_height"
+            android:background="@drawable/chassis6"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/predamageditemsbutton"
+                android:layout_width="@dimen/vehicleform_addButton_width"
+                android:layout_height="@dimen/vehicleform_addButton_height"
+                android:layout_marginLeft="@dimen/vehicleform_linearLayout3_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="pre_damageditems_button_click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL2_height"
+            android:background="@drawable/chassis7"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/possibledrbutton"
+                android:layout_width="@dimen/vehicleform_addButton_width"
+                android:layout_height="@dimen/vehicleform_addButton_height"
+                android:layout_marginLeft="@dimen/vehicleform_linearLayout3_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="possibledr_button_click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL2_height"
+            android:background="@drawable/chassis8"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="@dimen/vehicleform_addButton_width"
+                android:layout_height="@dimen/vehicleform_addButton_height"
+                android:layout_marginLeft="@dimen/vehicleform_linearLayout3_marginLeft"
+                android:layout_marginTop="@dimen/vehicleform_button_marginTop"
+                android:background="@drawable/add_button_xml"
+                android:clickable="true"
+                android:onClick="tyrecondition_button_click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vehicleform_LL3_height"
+            android:background="@drawable/chassis9"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/contributory_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/editText_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_marginTop="@dimen/vehicleform_spinner_marginTop"
+                android:background="@drawable/motorclaims_spinneritem"
+                android:paddingRight="@dimen/spinner_paddinfRight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottombar_lyh"
+        android:layout_width="@dimen/header_width"
+        android:layout_height="@dimen/bottom_button_bar_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/accidentform_bottomLyr_marginTop"
+        android:background="@drawable/bottom_button_bar"
+        android:clickable="true"
+        android:onClick="onClick_keyboardClose" >
+
+        <Button
+            android:id="@+id/VehicleformBackButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/buttons_margin"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/VehicleformNextButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/button2_marginLeft"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:background="@drawable/next_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_next_button" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

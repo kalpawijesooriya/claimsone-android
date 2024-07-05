@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#fff"
+    android:onClick="onClick_keyboardClose">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittext_border"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/accidentform_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.2"
+        android:background="@drawable/accidentform_top_header">
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+
+    <LinearLayout
+    android:id="@+id/whitebody_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Type of Goods Carried"
+            style="@style/LabelStyle" />
+        <EditText
+            android:id="@+id/typeofgoodscarriedtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_border"
+            android:digits="@string/alphanumeric_specialcharacters"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="textLongMessage"
+            android:lines="1"
+            android:maxLength="250"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:textSize="8pt" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Weight of Goods Carried"
+            style="@style/LabelStyle" />
+        <EditText
+            android:id="@+id/weightofgoodscarriedtext"
+            android:background="@drawable/edittext_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:layout_gravity="center"
+            android:digits="@string/alphanumeric_specialcharacters"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="numberSigned|numberDecimal"
+            android:lines="1"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="8pt" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Damages to the goods"
+            style="@style/LabelStyle" />
+        <EditText
+            android:id="@+id/damagestothegoodstext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_border"
+            android:digits="@string/alphanumeric_specialcharacters"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="textLongMessage"
+            android:lines="1"
+            android:maxLength="500"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/editText_textSize" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Overloaded"
+            style="@style/LabelStyle" />
+        <Spinner
+            android:id="@+id/overloaded_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_border" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Is Overweight Contributory"
+            style="@style/LabelStyle" />
+        <Spinner
+            android:id="@+id/is_overweight_contributory_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_border" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Other Vehicles Involved"
+            style="@style/LabelStyle" />
+        <EditText
+            android:id="@+id/othervehiclesinvolvedtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:digits="@string/alphanumeric_specialcharacters"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="textLongMessage"
+            android:lines="1"
+            android:maxLength="500"
+            android:maxLines="1"
+            android:background="@drawable/edittext_border"
+            android:singleLine="true"
+            android:textSize="8pt"
+            android:paddingLeft="5dp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Third Party Property Damages"
+            style="@style/LabelStyle" />
+        <EditText
+            android:id="@+id/thirdpartydamagespropertytext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:digits="@string/alphanumeric_specialcharacters"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="textLongMessage"
+            android:lines="1"
+            android:maxLength="500"
+            android:maxLines="1"
+            android:background="@drawable/edittext_border"
+            android:singleLine="true"
+            android:textSize="8pt"
+            android:paddingLeft="5dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otheritems_body_LinearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15px"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Injuries (Insured + Third Party)"
+            style="@style/LabelStyle" />
+        <EditText
+            android:id="@+id/injuriestext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:digits="@string/alphanumeric_specialcharacters"
+            android:imeOptions="actionDone"
+            android:inputType="textLongMessage"
+            android:lines="1"
+            android:maxLength="300"
+            android:maxLines="1"
+            android:background="@drawable/edittext_border"
+            android:singleLine="true"
+            android:textSize="8pt"
+            android:paddingLeft="5dp" >
+        </EditText>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:id="@+id/linearLayout56"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:baselineAligned="true"
+            android:clickable="true"
+            android:onClick="onClick_keyboardClose"
+            android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/OtheritemsBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="on_click_back_button"
+            android:background="@drawable/navigation_button_boder"
+            android:textColor="#fff"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Back">
+        </Button>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1">
+            </RelativeLayout>
+        <Button
+            android:id="@+id/OtheritemsNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="on_click_next_button"
+            android:background="@drawable/navigation_button_boder"
+            android:textColor="#fff"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Next">
+        </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

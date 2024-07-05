@@ -1,0 +1,27 @@
+<configuration>
+<!-- Create a file appender for a log in the application's data directory -->
+<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>/sdcard/SLIC/Logs/Log_0.txt</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <fileNamePattern>/sdcard/SLIC/Logs/Log_%i.txt</fileNamePattern>
+      <minIndex>1</minIndex>
+      <maxIndex>20</maxIndex>
+    </rollingPolicy>
+
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <maxFileSize>10MB</maxFileSize>
+    </triggeringPolicy>
+    <encoder>
+  <!-- Pattern doc http://logback.qos.ch/manual/layouts.html -->
+  <!-- <pattern>%d{yyyy/MMM/dd hh:mm:ss a} [%thread] %-5level %logger{36} - %msg%n</pattern> -->
+       <pattern>%-7level [%-9thread]  %-20logger{0} - %msg  -  [%d{yyyy-MMM-dd hh:mm:ss a}]%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Write defined level (and higher-level) messages to the log file -->
+  <!-- When debugging use DEBUG, use INFO otherwise -->
+  <!-- INFO: INFO,WARN,ERROR  |  DEBUG: INFO,WARN,DEBUG,ERROR  |  TRACE: INFO,WARN,DEBUG,ERROR,TRACE -->
+  <root level="INFO">
+    <appender-ref ref="FILE" />
+  </root>
+</configuration>

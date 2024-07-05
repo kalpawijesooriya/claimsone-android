@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driveform_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:onClick="onClick_keyboardClose"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/accidentform_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/accidentform_top_header"
+        android:orientation="vertical">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/driverform_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/driverform_body_LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/driverform_body1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:background="#00FFFFFF"
+                android:layout_height="@dimen/driverform_linearLayout1_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/driversnametext"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_height="@dimen/editText_height"
+                    android:layout_marginRight="@dimen/driverform_driversnametext_marginRight"
+                    android:background="#00FFFFFF"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLength="180"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/drivername_reason_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@drawable/reason_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_drivername_reason_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/driverform_body_LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/driverform_body2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/driverform_linearLayout1_height"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:background="#00FFFFFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="56dp"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/drivinglicensenotext"
+                    android:layout_weight="20"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="#00FFFFFF"
+                    android:digits="@string/alphanumeric_specialcharacters"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="180"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/drivinglicenceno_reason_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@drawable/reason_button_xml"
+                    android:clickable="true"
+                    android:onClick="on_click_drivinglicenceno_reason_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/driverform_body3"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/driverform_body_LinearLayout30"
+                android:layout_width="834dp"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/typeOfNIC_spinner"
+                    android:layout_width="327dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/driverform_NICType_spinner_marginRight"
+                    android:background="@drawable/nic_type_spinner_bg"
+                    android:gravity="right"
+                    android:paddingRight="80dp"></Spinner>
+
+                <EditText
+                    android:id="@+id/nicnoofdrivertext"
+                    android:layout_width="665dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:background="#00FFFFFF"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+
+            android:background="@drawable/driverform_body4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#00FFFFFF"
+                android:layout_gravity="left"
+                android:layout_marginTop="60dp"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose">
+
+                <Spinner
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:id="@+id/relationship_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@drawable/motorclaims_spinneritem"
+                    android:paddingRight="20dp" ></Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/driverform_body5">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="#00FFFFFF"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:onClick="onClick_keyboardClose"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/driverform_linearLayout2_marginLeft" >
+
+                <EditText
+                    android:id="@+id/datetextboxDF"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="true"
+                    android:contentDescription="DD"
+                    android:hint="DD"
+                    android:background="#00FFFFFF"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparatorDF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/date_height"
+                    android:background="#00FFFFFF"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/monthtextboxDF"
+                    android:layout_width="@dimen/dateNmonth_textbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="@dimen/monthtextbox_marginLeft"
+                    android:clickable="true"
+                    android:contentDescription="MM"
+                    android:hint="MM"
+                    android:background="#00FFFFFF"
+                    android:imeOptions="flagNavigateNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <TextView
+                    android:id="@+id/dateseparatorDF1"
+                    android:layout_width="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:layout_height="@dimen/date_height"
+                    android:clickable="false"
+                    android:text="/"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editText_textSize" />
+
+                <EditText
+                    android:id="@+id/yeartextboxDF"
+                    android:layout_width="@dimen/yeartextbox_width"
+                    android:layout_height="@dimen/date_height"
+                    android:layout_marginLeft="1dip"
+                    android:clickable="true"
+                    android:contentDescription="YY"
+                    android:hint="YY"
+                    android:background="#00FFFFFF"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/datetextbox_paddingleft"
+                    android:saveEnabled="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editText_textSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/driverform_body6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#00FFFFFF"
+                android:layout_gravity="left"
+                android:layout_marginTop="55dp"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose">
+
+                <Spinner
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:id="@+id/typeof_drivinglicense_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@drawable/motorclaims_spinneritem"
+                    android:paddingRight="20dp" ></Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:background="@drawable/driverform_body7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#00FFFFFF"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/driverform_linearLayout112_marginTop"
+                android:clickable="true"
+                android:onClick="onClick_keyboardClose" >
+
+                <Spinner
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:id="@+id/oldnew_drivinglicensespinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@drawable/motorclaims_spinneritem"
+                    android:paddingRight="20dp" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/driverform_body_LinearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/driverform_body8"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout23"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/driverform_linearLayout23_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/driverform_linearLayout23_marginTop"
+                android:clickable="true"
+                android:gravity="right"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal"
+                android:onClick="onClick_keyboardClose" >
+
+                    <Spinner
+                        android:id="@+id/competence_spinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/editText_height"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/motorclaims_spinneritem_small"
+                        android:paddingLeft="@dimen/driverform_competence_spinner_paddingLeft"
+                        android:paddingRight="20dp"></Spinner>
+
+                    <Button
+                        android:id="@+id/vehicleclassbutton"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selectvehicle_class_button_xml"
+                        android:clickable="true"
+                        android:onClick="on_click_vehicle_class" >
+                    </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/linearLayout56"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bottom_button_bar"
+        android:clickable="true"
+        android:layout_weight="1.3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick_keyboardClose" >
+
+        <Button
+            android:id="@+id/DriverFormBackButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/back_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_back_button" >
+        </Button>
+
+        <Button
+            android:id="@+id/DriverformNextButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/next_button_xml"
+            android:clickable="true"
+            android:onClick="on_click_next_button" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

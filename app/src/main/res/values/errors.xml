@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textNull">Text is null</string>
+    <string name="networkunavailable">Unable to connect to the server!</string><!-- Network Unavailable! -->
+    <string name="login_error">Login Failed.\nPlease Try Again.</string>
+    <string name="data_upload_error">Data Upload Failed. Press Submit to try again. Press Cancel to end the job and go to home.</string>
+    <string name="searching_message">Searching...</string>
+    <string name="search_error">Searching Failed.\nPlease Try Again.</string>
+    <string name="networkunavailable_gooffline_one">Cannot reach to the server, Please inform your network administrator, Do you want to proceed in offline mode?</string>
+    <string name="networkunavailable_gooffline_two">You may not have internet or in a low coverage area, Do you want to proceed in offline mode?</string>
+    <string name="submit_no_network_msg">You may not have internet or in a low coverage area</string>
+</resources>
