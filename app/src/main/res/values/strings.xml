@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="version">V 2.8.0</string>
+    <string name="version">V 3.0.1</string>
     <string name="hello">Hello World, LoginActivity!</string>
     <string name="app_name">ClaimsOne</string>
     <string name="SampleEditText">editText</string>

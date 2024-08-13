@@ -561,7 +561,7 @@
             android:background="@drawable/navigation_button_boder"
             android:clickable="true"
             android:textSize="9pt"
-            android:onClick="on_click_cancel_button"
+            android:onClick="on_click_back_button"
             android:text="Back"
             android:textStyle="bold"
             android:textAllCaps="true"

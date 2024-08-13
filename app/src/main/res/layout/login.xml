@@ -32,7 +32,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-
             android:clickable="false"
             android:gravity="right"
             android:text="@string/version"
@@ -94,9 +93,9 @@
             android:inputType="textPassword"
             android:lines="1"
             android:maxLength="25"
+            android:text="SEC5194"
             android:maxLines="1"
             android:paddingLeft="10dp"
-            android:text="SEC5194"
             android:singleLine="true"
             android:textSize="@dimen/login_username_textSize">
 

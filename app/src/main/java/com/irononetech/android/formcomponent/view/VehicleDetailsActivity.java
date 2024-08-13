@@ -165,6 +165,7 @@ public class VehicleDetailsActivity extends Activity {
 	protected void onPause() {
 		try {
 			super.onPause();
+			onSave();
 			LOG.debug("ENTRY onPause");
 			System.gc();
 			LOG.debug("SUCCESS onPause");

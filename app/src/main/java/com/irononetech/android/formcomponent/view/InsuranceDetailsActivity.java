@@ -134,6 +134,7 @@ public class InsuranceDetailsActivity extends Activity{
 	protected void onPause() {
 		try {
 			super.onPause();
+			onSave();
 			LOG.debug("ENTRY onPause");
 			System.gc();
 			LOG.debug("SUCCESS onPause");
@@ -232,7 +233,11 @@ public class InsuranceDetailsActivity extends Activity{
 	        }
 	    });
 	}
-	
+	public void on_click_cancel_button(View v){
+		//Application.cancelForm(this);
+		Application.getInstance().doActionOnEvent(new EventParcel(UIEvent.CANCEL_FORM, this, null));
+	}
+
 	public Boolean dataValidation() throws GenException {
 		boolean val = false;
 		try {

@@ -366,6 +366,7 @@ public class DriverDetailsActivity extends Activity {
 	protected void onPause() {
 		try {
 			super.onPause();
+			onSave();
 			LOG.debug("ENTRY onPause");
 			System.gc();
 			LOG.debug("SUCCESS onPause");
@@ -554,8 +555,8 @@ public class DriverDetailsActivity extends Activity {
 			// relationshipSpinner.getItemAtPosition(pos).toString());
 
 			for (RelationshipMapping fm : RelationshipMapping.values()) {
-				if (relationshipSpinner.getItemAtPosition(pos).toString()
-						.equals(fm.getString())) {
+				int s= fm.getInt();
+				if (pos== (fm.getInt()-1)) {
 					formObject.setRelationshipBetweenDriverAndInsured(Integer
 							.toString(fm.getInt()));
 					break;

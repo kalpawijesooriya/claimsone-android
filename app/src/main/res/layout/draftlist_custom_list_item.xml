@@ -3,7 +3,10 @@
     android:id="@+id/listlayoutview"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/listview_select_only_row_xml"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/edittext_border"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -26,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Job No:"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="8pt" />
 
@@ -50,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
                 android:text="Vehicle No:"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="8pt" />
 
@@ -83,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Visit Type:"
-                android:textSize="7pt" />
+                android:textSize="8pt" />
 
             <TextView
                 android:id="@+id/visittypetext"
@@ -107,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Created On:"
-                android:textSize="7pt" />
+                android:textSize="8pt" />
 
             <TextView
                 android:id="@+id/date"

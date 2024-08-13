@@ -246,6 +246,7 @@ public class TechnicalReviewDetailsActivity extends Activity {
 	protected void onPause() {
 		try {
 			super.onPause();
+			onSave();
 			LOG.debug("ENTRY onResume");
 			//onSave();
 			System.gc();

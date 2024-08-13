@@ -174,7 +174,7 @@ public class VisitActivity extends Activity {
 		LOG.debug("ENTRY onPause");
 		try {
 			super.onPause();
-
+			onSave();
 			LOG.debug("SUCCESS onPause");
 			// onSave();
 		} catch (Exception e) {
